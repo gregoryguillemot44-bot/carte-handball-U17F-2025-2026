@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6c20d1b94b97afea6fa5ea1c745cd162 {
+                #map_5a2dde0c666e3a0bc4e53a75eef6635c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -58,365 +58,629 @@
     <button onclick="document.getElementById('tableau_modal').style.display='block'" 
             style="background-color: #0078A8; color: white; border: none; padding: 10px 20px; 
                    font-size: 16px; cursor: pointer; border-radius: 5px; box-shadow: 2px 2px 5px grey;">
-        📊 Voir Classement & Stats
+        📊 Voir Classements & Stats
     </button>
 </div>
 
 <div id="tableau_modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
-                               background-color: rgba(0,0,0,0.7); z-index: 10000; overflow: auto;">
-    <div style="background-color: white; margin: 5% auto; padding: 20px; border: 1px solid #888; 
-                width: 80%; max-width: 800px; border-radius: 8px; position: relative;">
+                               background-color: rgba(0,0,0,0.8); z-index: 10000; overflow: auto;">
+    <div style="background-color: white; margin: 3% auto; padding: 25px; border: 1px solid #888; 
+                width: 90%; max-width: 900px; border-radius: 8px; position: relative;">
         
         <span onclick="document.getElementById('tableau_modal').style.display='none'" 
               style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
         
-        <h2 style="text-align:center; font-family:Arial;">Statistiques des Équipes Qualifiées</h2>
+        <h1 style="text-align:center; font-family:Arial; color:#333;">Statistiques Qualifiées U17F</h1>
         
-        <table style="width:100%; border-collapse: collapse; font-family:Arial; font-size:14px;">
+        <h3 style="font-family:Arial; border-bottom: 2px solid #0078A8; padding-bottom:5px;">1. Résultats par Poule</h3>
+        <table style="width:100%; border-collapse: collapse; font-family:Arial; font-size:14px; margin-bottom: 30px;">
             <thead>
                 <tr style="background-color: #333; color: white;">
                     <th style="padding: 10px; text-align:left;">Poule</th>
                     <th style="padding: 10px; text-align:left;">Club</th>
-                    <th style="padding: 10px;">G</th>
-                    <th style="padding: 10px;">N</th>
-                    <th style="padding: 10px;">P</th>
+                    <th style="padding: 10px;">Pts</th>
                     <th style="padding: 10px;">Diff</th>
+                    <th style="padding: 10px;">G-N-P</th>
                 </tr>
             </thead>
             <tbody>
                 
-    <tr style="background-color:#d4edda;">
-        <td>1</td>
-        <td>Bearn Feminin HB</td>
-        <td style="text-align:center;">10</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">115</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">1</td>
+        <td style="padding:8px;">Bearn Feminin HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">115</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>1</td>
-        <td>Pau Nousty Sports</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">3</td>
-        <td style="text-align:center;">42</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">1</td>
+        <td style="padding:8px;">Pau Nousty Sports</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">42</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>2</td>
-        <td>Merignac Gironde HB</td>
-        <td style="text-align:center;">9</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">137</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">2</td>
+        <td style="padding:8px;">Merignac Gironde HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">28</td>
+        <td style="padding:8px; text-align:center;">137</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">9-0-1</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>2</td>
-        <td>Tournefeuille Handball</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">63</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">2</td>
+        <td style="padding:8px;">Tournefeuille Handball</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">63</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
     </tr>
     
-    <tr style="background-color:#fff3cd;">
-        <td>2</td>
-        <td>Pechbonnieu Coteaux HB</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">3</td>
-        <td style="text-align:center;">40</td>
+    <tr style="background-color:#fff3cd; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">2</td>
+        <td style="padding:8px;">Pechbonnieu Coteaux HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">40</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>3</td>
-        <td>Perigueux Handball</td>
-        <td style="text-align:center;">10</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">137</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">3</td>
+        <td style="padding:8px;">Perigueux Handball</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">137</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>3</td>
-        <td>Saint-Flour Handball</td>
-        <td style="text-align:center;">6</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">33</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">3</td>
+        <td style="padding:8px;">Saint-Flour Handball</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">33</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-2-2</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>4</td>
-        <td>St Nazaire Handball</td>
-        <td style="text-align:center;">10</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">139</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">4</td>
+        <td style="padding:8px;">St Nazaire Handball</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">139</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>4</td>
-        <td>La Roche sur Yon</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">3</td>
-        <td style="text-align:center;">54</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">4</td>
+        <td style="padding:8px;">La Roche sur Yon</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">54</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>5</td>
-        <td>St Sebastien Sud Loire</td>
-        <td style="text-align:center;">9</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">90</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">5</td>
+        <td style="padding:8px;">St Sebastien Sud Loire</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">29</td>
+        <td style="padding:8px; text-align:center;">90</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">9-1-0</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>5</td>
-        <td>Nantes Loire Feminin</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">65</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">5</td>
+        <td style="padding:8px;">Nantes Loire Feminin</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">65</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
     </tr>
     
-    <tr style="background-color:#fff3cd;">
-        <td>5</td>
-        <td>Entente Cornouaille</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">3</td>
-        <td style="text-align:center;">78</td>
+    <tr style="background-color:#fff3cd; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">5</td>
+        <td style="padding:8px;">Entente Cornouaille</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">78</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>6</td>
-        <td>Feline HB Academie</td>
-        <td style="text-align:center;">9</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">60</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">6</td>
+        <td style="padding:8px;">Feline HB Academie</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">28</td>
+        <td style="padding:8px; text-align:center;">60</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">9-0-1</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>6</td>
-        <td>HB Feminin Caen Est</td>
-        <td style="text-align:center;">6</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">4</td>
-        <td style="text-align:center;">50</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">6</td>
+        <td style="padding:8px;">HB Feminin Caen Est</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">22</td>
+        <td style="padding:8px; text-align:center;">50</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-0-4</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>7</td>
-        <td>Stella Saint-Maur HB</td>
-        <td style="text-align:center;">8</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">113</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">7</td>
+        <td style="padding:8px;">Stella Saint-Maur HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">113</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-0-2</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>7</td>
-        <td>Entente Sud 93</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">108</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">7</td>
+        <td style="padding:8px;">Entente Sud 93</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">108</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>8</td>
-        <td>Entente Elite 77</td>
-        <td style="text-align:center;">10</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">111</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">8</td>
+        <td style="padding:8px;">Entente Elite 77</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">111</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>8</td>
-        <td>Yvelines HB</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">3</td>
-        <td style="text-align:center;">26</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">8</td>
+        <td style="padding:8px;">Yvelines HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">26</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>9</td>
-        <td>Issy-Paris Hand</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">91</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">9</td>
+        <td style="padding:8px;">Issy-Paris Hand</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">91</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-2-1</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>9</td>
-        <td>Sambre Avesnois HB</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">84</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">9</td>
+        <td style="padding:8px;">Sambre Avesnois HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">84</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-2-1</td>
     </tr>
     
-    <tr style="background-color:#fff3cd;">
-        <td>9</td>
-        <td>Lille Metropole HB</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">3</td>
-        <td style="text-align:center;">63</td>
+    <tr style="background-color:#fff3cd; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">9</td>
+        <td style="padding:8px;">Lille Metropole HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">63</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>10</td>
-        <td>Metz Handball</td>
-        <td style="text-align:center;">9</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">72</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">10</td>
+        <td style="padding:8px;">Metz Handball</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">28</td>
+        <td style="padding:8px; text-align:center;">72</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">9-0-1</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>10</td>
-        <td>Entente Yutz HB</td>
-        <td style="text-align:center;">6</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">4</td>
-        <td style="text-align:center;">29</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">10</td>
+        <td style="padding:8px;">Entente Yutz HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">22</td>
+        <td style="padding:8px; text-align:center;">29</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-0-4</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>11</td>
-        <td>Entente Saone Mamirolle</td>
-        <td style="text-align:center;">8</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">64</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">11</td>
+        <td style="padding:8px;">Entente Saone Mamirolle</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">27</td>
+        <td style="padding:8px; text-align:center;">64</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-1-1</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>11</td>
-        <td>Strasbourg Achenheim</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">71</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">11</td>
+        <td style="padding:8px;">Strasbourg Achenheim</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">71</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>12</td>
-        <td>Palente Besancon HB</td>
-        <td style="text-align:center;">10</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">124</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">12</td>
+        <td style="padding:8px;">Palente Besancon HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">124</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>12</td>
-        <td>JDA Dijon HB</td>
-        <td style="text-align:center;">8</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">93</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">12</td>
+        <td style="padding:8px;">JDA Dijon HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">93</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-0-2</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>13</td>
-        <td>Lyon Metropole HB</td>
-        <td style="text-align:center;">8</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">85</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">13</td>
+        <td style="padding:8px;">Lyon Metropole HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">85</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-0-2</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>13</td>
-        <td>ALC Longvic / Chevigny</td>
-        <td style="text-align:center;">8</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">32</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">13</td>
+        <td style="padding:8px;">ALC Longvic / Chevigny</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">32</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-0-2</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>14</td>
-        <td>Academie HB Pour Elles</td>
-        <td style="text-align:center;">8</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">67</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">14</td>
+        <td style="padding:8px;">Academie HB Pour Elles</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">27</td>
+        <td style="padding:8px; text-align:center;">67</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-1-1</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>14</td>
-        <td>Bouillargues HB Nimes</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">40</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">14</td>
+        <td style="padding:8px;">Bouillargues HB Nimes</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">40</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
     </tr>
     
-    <tr style="background-color:#fff3cd;">
-        <td>14</td>
-        <td>HBC Clermont Salagou</td>
-        <td style="text-align:center;">6</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">21</td>
+    <tr style="background-color:#fff3cd; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">14</td>
+        <td style="padding:8px;">HBC Clermont Salagou</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">21</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-2-2</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>15</td>
-        <td>Handball Plan de Cuques</td>
-        <td style="text-align:center;">8</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">125</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">15</td>
+        <td style="padding:8px;">Handball Plan de Cuques</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">27</td>
+        <td style="padding:8px; text-align:center;">125</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-1-1</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>15</td>
-        <td>HB Feminin Montpellier</td>
-        <td style="text-align:center;">6</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">2</td>
-        <td style="text-align:center;">56</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">15</td>
+        <td style="padding:8px;">HB Feminin Montpellier</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">56</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-2-2</td>
     </tr>
     
-    <tr style="background-color:#d4edda;">
-        <td>16</td>
-        <td>USAM Nimes Gard</td>
-        <td style="text-align:center;">7</td>
-        <td style="text-align:center;">0</td>
-        <td style="text-align:center;">3</td>
-        <td style="text-align:center;">36</td>
+    <tr style="background-color:#d4edda; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">16</td>
+        <td style="padding:8px;">USAM Nimes Gard</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">36</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
     </tr>
     
-    <tr style="background-color:#cce5ff;">
-        <td>16</td>
-        <td>Pays de Grasse HB</td>
-        <td style="text-align:center;">6</td>
-        <td style="text-align:center;">1</td>
-        <td style="text-align:center;">3</td>
-        <td style="text-align:center;">9</td>
+    <tr style="background-color:#cce5ff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px;">16</td>
+        <td style="padding:8px;">Pays de Grasse HB</td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">23</td>
+        <td style="padding:8px; text-align:center;">9</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-1-3</td>
     </tr>
     
             </tbody>
         </table>
-        <br>
-        <div style="text-align:center; font-size:12px; color:grey;">
-            <span style="background-color:#d4edda; border:1px solid #ccc; padding:2px;">&nbsp;&nbsp;</span> 1ers
-            <span style="background-color:#cce5ff; border:1px solid #ccc; padding:2px;">&nbsp;&nbsp;</span> 2èmes
-            <span style="background-color:#fff3cd; border:1px solid #ccc; padding:2px;">&nbsp;&nbsp;</span> Meilleurs 3èmes
-        </div>
+        
+        <h3 style="font-family:Arial; border-bottom: 2px solid #d9534f; padding-bottom:5px;">2. Classement Général (Top 36)</h3>
+        <p style="font-family:Arial; font-size:12px; color:grey; margin-top:-10px;">Critères : Points > Différence de buts</p>
+        <table style="width:100%; border-collapse: collapse; font-family:Arial; font-size:14px;">
+            <thead>
+                <tr style="background-color: #d9534f; color: white;">
+                    <th style="padding: 10px;">Rang</th>
+                    <th style="padding: 10px; text-align:left;">Club</th>
+                    <th style="padding: 10px;">Pts</th>
+                    <th style="padding: 10px;">Diff</th>
+                    <th style="padding: 10px;">G-N-P</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; font-weight:bold; color:#d9534f;">1</td>
+        <td style="padding:8px;">St Nazaire Handball <span style="font-size:10px; color:grey;">(Poule 4)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">139</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; font-weight:bold; color:#d9534f;">2</td>
+        <td style="padding:8px;">Perigueux Handball <span style="font-size:10px; color:grey;">(Poule 3)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">137</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; font-weight:bold; color:#d9534f;">3</td>
+        <td style="padding:8px;">Palente Besancon HB <span style="font-size:10px; color:grey;">(Poule 12)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">124</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">4</td>
+        <td style="padding:8px;">Bearn Feminin HB <span style="font-size:10px; color:grey;">(Poule 1)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">115</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">5</td>
+        <td style="padding:8px;">Entente Elite 77 <span style="font-size:10px; color:grey;">(Poule 8)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">30</td>
+        <td style="padding:8px; text-align:center;">111</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">10-0-0</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">6</td>
+        <td style="padding:8px;">St Sebastien Sud Loire <span style="font-size:10px; color:grey;">(Poule 5)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">29</td>
+        <td style="padding:8px; text-align:center;">90</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">9-1-0</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">7</td>
+        <td style="padding:8px;">Merignac Gironde HB <span style="font-size:10px; color:grey;">(Poule 2)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">28</td>
+        <td style="padding:8px; text-align:center;">137</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">9-0-1</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">8</td>
+        <td style="padding:8px;">Metz Handball <span style="font-size:10px; color:grey;">(Poule 10)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">28</td>
+        <td style="padding:8px; text-align:center;">72</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">9-0-1</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">9</td>
+        <td style="padding:8px;">Feline HB Academie <span style="font-size:10px; color:grey;">(Poule 6)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">28</td>
+        <td style="padding:8px; text-align:center;">60</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">9-0-1</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">10</td>
+        <td style="padding:8px;">Handball Plan de Cuques <span style="font-size:10px; color:grey;">(Poule 15)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">27</td>
+        <td style="padding:8px; text-align:center;">125</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-1-1</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">11</td>
+        <td style="padding:8px;">Academie HB Pour Elles <span style="font-size:10px; color:grey;">(Poule 14)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">27</td>
+        <td style="padding:8px; text-align:center;">67</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-1-1</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">12</td>
+        <td style="padding:8px;">Entente Saone Mamirolle <span style="font-size:10px; color:grey;">(Poule 11)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">27</td>
+        <td style="padding:8px; text-align:center;">64</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-1-1</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">13</td>
+        <td style="padding:8px;">Stella Saint-Maur HB <span style="font-size:10px; color:grey;">(Poule 7)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">113</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-0-2</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">14</td>
+        <td style="padding:8px;">JDA Dijon HB <span style="font-size:10px; color:grey;">(Poule 12)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">93</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-0-2</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">15</td>
+        <td style="padding:8px;">Issy-Paris Hand <span style="font-size:10px; color:grey;">(Poule 9)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">91</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-2-1</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">16</td>
+        <td style="padding:8px;">Lyon Metropole HB <span style="font-size:10px; color:grey;">(Poule 13)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">85</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-0-2</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">17</td>
+        <td style="padding:8px;">Sambre Avesnois HB <span style="font-size:10px; color:grey;">(Poule 9)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">84</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-2-1</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">18</td>
+        <td style="padding:8px;">ALC Longvic / Chevigny <span style="font-size:10px; color:grey;">(Poule 13)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">26</td>
+        <td style="padding:8px; text-align:center;">32</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">8-0-2</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">19</td>
+        <td style="padding:8px;">Entente Sud 93 <span style="font-size:10px; color:grey;">(Poule 7)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">108</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">20</td>
+        <td style="padding:8px;">Strasbourg Achenheim <span style="font-size:10px; color:grey;">(Poule 11)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">71</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">21</td>
+        <td style="padding:8px;">Nantes Loire Feminin <span style="font-size:10px; color:grey;">(Poule 5)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">65</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">22</td>
+        <td style="padding:8px;">Tournefeuille Handball <span style="font-size:10px; color:grey;">(Poule 2)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">63</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">23</td>
+        <td style="padding:8px;">Bouillargues HB Nimes <span style="font-size:10px; color:grey;">(Poule 14)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">25</td>
+        <td style="padding:8px; text-align:center;">40</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-1-2</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">24</td>
+        <td style="padding:8px;">Entente Cornouaille <span style="font-size:10px; color:grey;">(Poule 5)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">78</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">25</td>
+        <td style="padding:8px;">Lille Metropole HB <span style="font-size:10px; color:grey;">(Poule 9)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">63</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">26</td>
+        <td style="padding:8px;">HB Feminin Montpellier <span style="font-size:10px; color:grey;">(Poule 15)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">56</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-2-2</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">27</td>
+        <td style="padding:8px;">La Roche sur Yon <span style="font-size:10px; color:grey;">(Poule 4)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">54</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">28</td>
+        <td style="padding:8px;">Pau Nousty Sports <span style="font-size:10px; color:grey;">(Poule 1)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">42</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">29</td>
+        <td style="padding:8px;">Pechbonnieu Coteaux HB <span style="font-size:10px; color:grey;">(Poule 2)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">40</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">30</td>
+        <td style="padding:8px;">USAM Nimes Gard <span style="font-size:10px; color:grey;">(Poule 16)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">36</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">31</td>
+        <td style="padding:8px;">Saint-Flour Handball <span style="font-size:10px; color:grey;">(Poule 3)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">33</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-2-2</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">32</td>
+        <td style="padding:8px;">Yvelines HB <span style="font-size:10px; color:grey;">(Poule 8)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">26</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">7-0-3</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">33</td>
+        <td style="padding:8px;">HBC Clermont Salagou <span style="font-size:10px; color:grey;">(Poule 14)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">24</td>
+        <td style="padding:8px; text-align:center;">21</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-2-2</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">34</td>
+        <td style="padding:8px;">Pays de Grasse HB <span style="font-size:10px; color:grey;">(Poule 16)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">23</td>
+        <td style="padding:8px; text-align:center;">9</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-1-3</td>
+    </tr>
+    
+    <tr style="background-color:#ffffff; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">35</td>
+        <td style="padding:8px;">HB Feminin Caen Est <span style="font-size:10px; color:grey;">(Poule 6)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">22</td>
+        <td style="padding:8px; text-align:center;">50</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-0-4</td>
+    </tr>
+    
+    <tr style="background-color:#f9f9f9; border-bottom: 1px solid #ddd;">
+        <td style="padding:8px; text-align:center; color:#333;">36</td>
+        <td style="padding:8px;">Entente Yutz HB <span style="font-size:10px; color:grey;">(Poule 10)</span></td>
+        <td style="padding:8px; text-align:center; font-weight:bold;">22</td>
+        <td style="padding:8px; text-align:center;">29</td>
+        <td style="padding:8px; text-align:center; font-size:11px; color:#555;">6-0-4</td>
+    </tr>
+    
+            </tbody>
+        </table>
+
     </div>
 </div>
     
@@ -431,14 +695,14 @@
       </div>
      
     
-            <div class="folium-map" id="map_6c20d1b94b97afea6fa5ea1c745cd162" ></div>
+            <div class="folium-map" id="map_5a2dde0c666e3a0bc4e53a75eef6635c" ></div>
         
 </body>
 <script>
     
     
-            var map_6c20d1b94b97afea6fa5ea1c745cd162 = L.map(
-                "map_6c20d1b94b97afea6fa5ea1c745cd162",
+            var map_5a2dde0c666e3a0bc4e53a75eef6635c = L.map(
+                "map_5a2dde0c666e3a0bc4e53a75eef6635c",
                 {
                     center: [46.603354, 1.888334],
                     crs: L.CRS.EPSG3857,
@@ -455,7 +719,7 @@
 
         
     
-            var tile_layer_8dad606bc30b18beec1a85fe8fd3bbb2 = L.tileLayer(
+            var tile_layer_a1fdd970ec25497182f998394889793f = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -472,17 +736,17 @@
             );
         
     
-            tile_layer_8dad606bc30b18beec1a85fe8fd3bbb2.addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            tile_layer_a1fdd970ec25497182f998394889793f.addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var marker_dbb989a505e7ea47c7dedd5032b9cdbd = L.marker(
+            var marker_3a6f8e64ff2f9182b857f1cd1c3258f4 = L.marker(
                 [43.238, -0.279],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_b3dc15b0087be3d8cb8699fb93340447 = L.AwesomeMarkers.icon(
+            var icon_4ad90f06a196fc453a90b349cffa8f0b = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -493,24 +757,24 @@
             );
         
     
-        var popup_36b2bf5968a96eeb8cc30407e42bac70 = L.popup({
+        var popup_9cdc45bbf9f960c1aee1de211323b25f = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_b958e76888796a5a4fcd321c87d80895 = $(`<div id="html_b958e76888796a5a4fcd321c87d80895" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Bearn Feminin HB</b><br>     Poule 1 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 115     </div>     </div>`)[0];
-                popup_36b2bf5968a96eeb8cc30407e42bac70.setContent(html_b958e76888796a5a4fcd321c87d80895);
+                var html_d562b08334b1ae4aad05cb55ba5a5676 = $(`<div id="html_d562b08334b1ae4aad05cb55ba5a5676" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Bearn Feminin HB</b><br>     Poule 1 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 30 | Diff: 115<br>     G:10 N:0 P:0     </div>     </div>`)[0];
+                popup_9cdc45bbf9f960c1aee1de211323b25f.setContent(html_d562b08334b1ae4aad05cb55ba5a5676);
             
         
 
-        marker_dbb989a505e7ea47c7dedd5032b9cdbd.bindPopup(popup_36b2bf5968a96eeb8cc30407e42bac70)
+        marker_3a6f8e64ff2f9182b857f1cd1c3258f4.bindPopup(popup_9cdc45bbf9f960c1aee1de211323b25f)
         ;
 
         
     
     
-            marker_dbb989a505e7ea47c7dedd5032b9cdbd.bindTooltip(
+            marker_3a6f8e64ff2f9182b857f1cd1c3258f4.bindTooltip(
                 `<div>
                      Bearn Feminin HB
                  </div>`,
@@ -520,17 +784,17 @@
             );
         
     
-                marker_dbb989a505e7ea47c7dedd5032b9cdbd.setIcon(icon_b3dc15b0087be3d8cb8699fb93340447);
+                marker_3a6f8e64ff2f9182b857f1cd1c3258f4.setIcon(icon_4ad90f06a196fc453a90b349cffa8f0b);
             
     
-            var marker_51b001c8eab86794f8bc927cfa88b64e = L.marker(
+            var marker_222e30d2ac7b4884120469e0715e5b35 = L.marker(
                 [43.266, -0.216],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_bf0ebc5bee6be927db1dbe6c78af54f0 = L.AwesomeMarkers.icon(
+            var icon_b12ef43b335926105e3040a2a761d263 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -541,24 +805,24 @@
             );
         
     
-        var popup_e6aca3b4c4ec48a753bc2c6ac48bf7f2 = L.popup({
+        var popup_458d98374615c9699d4c581595b59fe4 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ce84a0612e2749029579c80ba5fd8394 = $(`<div id="html_ce84a0612e2749029579c80ba5fd8394" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pau Nousty Sports</b><br>     Poule 1 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 42     </div>     </div>`)[0];
-                popup_e6aca3b4c4ec48a753bc2c6ac48bf7f2.setContent(html_ce84a0612e2749029579c80ba5fd8394);
+                var html_a935564f9aac4744d313cbfeea620279 = $(`<div id="html_a935564f9aac4744d313cbfeea620279" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pau Nousty Sports</b><br>     Poule 1 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 42<br>     G:7 N:0 P:3     </div>     </div>`)[0];
+                popup_458d98374615c9699d4c581595b59fe4.setContent(html_a935564f9aac4744d313cbfeea620279);
             
         
 
-        marker_51b001c8eab86794f8bc927cfa88b64e.bindPopup(popup_e6aca3b4c4ec48a753bc2c6ac48bf7f2)
+        marker_222e30d2ac7b4884120469e0715e5b35.bindPopup(popup_458d98374615c9699d4c581595b59fe4)
         ;
 
         
     
     
-            marker_51b001c8eab86794f8bc927cfa88b64e.bindTooltip(
+            marker_222e30d2ac7b4884120469e0715e5b35.bindTooltip(
                 `<div>
                      Pau Nousty Sports
                  </div>`,
@@ -568,17 +832,17 @@
             );
         
     
-                marker_51b001c8eab86794f8bc927cfa88b64e.setIcon(icon_bf0ebc5bee6be927db1dbe6c78af54f0);
+                marker_222e30d2ac7b4884120469e0715e5b35.setIcon(icon_b12ef43b335926105e3040a2a761d263);
             
     
-            var marker_461a57e3dd30463eeae076fba2698dcd = L.marker(
+            var marker_53c1b3bb7c812855e32a3fd5d1debc63 = L.marker(
                 [44.837, -0.644],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_1e3c4239f85b119d3757f29c3e43688b = L.AwesomeMarkers.icon(
+            var icon_0828a8031dd4872b7d198310426d830f = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -589,24 +853,24 @@
             );
         
     
-        var popup_7323a36f7f801a621865471350e02dab = L.popup({
+        var popup_ae95c1a99e9f17e11c049c2395536b79 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_5ed9d192fa1b11872c84d52d7d2aba42 = $(`<div id="html_5ed9d192fa1b11872c84d52d7d2aba42" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Merignac Gironde HB</b><br>     Poule 2 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 9 | Nuls: 0 | Perdus: 1<br>     Diff Buts: 137     </div>     </div>`)[0];
-                popup_7323a36f7f801a621865471350e02dab.setContent(html_5ed9d192fa1b11872c84d52d7d2aba42);
+                var html_8fb7cd3605164a165e08343c954b2a1f = $(`<div id="html_8fb7cd3605164a165e08343c954b2a1f" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Merignac Gironde HB</b><br>     Poule 2 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 28 | Diff: 137<br>     G:9 N:0 P:1     </div>     </div>`)[0];
+                popup_ae95c1a99e9f17e11c049c2395536b79.setContent(html_8fb7cd3605164a165e08343c954b2a1f);
             
         
 
-        marker_461a57e3dd30463eeae076fba2698dcd.bindPopup(popup_7323a36f7f801a621865471350e02dab)
+        marker_53c1b3bb7c812855e32a3fd5d1debc63.bindPopup(popup_ae95c1a99e9f17e11c049c2395536b79)
         ;
 
         
     
     
-            marker_461a57e3dd30463eeae076fba2698dcd.bindTooltip(
+            marker_53c1b3bb7c812855e32a3fd5d1debc63.bindTooltip(
                 `<div>
                      Merignac Gironde HB
                  </div>`,
@@ -616,17 +880,17 @@
             );
         
     
-                marker_461a57e3dd30463eeae076fba2698dcd.setIcon(icon_1e3c4239f85b119d3757f29c3e43688b);
+                marker_53c1b3bb7c812855e32a3fd5d1debc63.setIcon(icon_0828a8031dd4872b7d198310426d830f);
             
     
-            var marker_086e192b21f8578913a677aa2b2d8dca = L.marker(
+            var marker_c53679a0e49a1074b049888ce0487609 = L.marker(
                 [43.585, 1.344],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_ca908a73aa13d945fa4449ff51f1cc37 = L.AwesomeMarkers.icon(
+            var icon_dcf1af83bc3f3a78e0cec73da61aa6da = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -637,24 +901,24 @@
             );
         
     
-        var popup_24a5fe46ffd971fcec21a1e12639dcf4 = L.popup({
+        var popup_1e726dc2cf62bd6978d3dbbbaa37f527 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_cd18eb2caf6725dd6170889712b0b5c1 = $(`<div id="html_cd18eb2caf6725dd6170889712b0b5c1" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Tournefeuille Handball</b><br>     Poule 2 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 63     </div>     </div>`)[0];
-                popup_24a5fe46ffd971fcec21a1e12639dcf4.setContent(html_cd18eb2caf6725dd6170889712b0b5c1);
+                var html_f1c9c988f52783117dcf259cbfc7a752 = $(`<div id="html_f1c9c988f52783117dcf259cbfc7a752" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Tournefeuille Handball</b><br>     Poule 2 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 25 | Diff: 63<br>     G:7 N:1 P:2     </div>     </div>`)[0];
+                popup_1e726dc2cf62bd6978d3dbbbaa37f527.setContent(html_f1c9c988f52783117dcf259cbfc7a752);
             
         
 
-        marker_086e192b21f8578913a677aa2b2d8dca.bindPopup(popup_24a5fe46ffd971fcec21a1e12639dcf4)
+        marker_c53679a0e49a1074b049888ce0487609.bindPopup(popup_1e726dc2cf62bd6978d3dbbbaa37f527)
         ;
 
         
     
     
-            marker_086e192b21f8578913a677aa2b2d8dca.bindTooltip(
+            marker_c53679a0e49a1074b049888ce0487609.bindTooltip(
                 `<div>
                      Tournefeuille Handball
                  </div>`,
@@ -664,17 +928,17 @@
             );
         
     
-                marker_086e192b21f8578913a677aa2b2d8dca.setIcon(icon_ca908a73aa13d945fa4449ff51f1cc37);
+                marker_c53679a0e49a1074b049888ce0487609.setIcon(icon_dcf1af83bc3f3a78e0cec73da61aa6da);
             
     
-            var marker_f980f7ff4e545e425df8702b443c21d1 = L.marker(
+            var marker_f58624391b4f4194480057115db16e93 = L.marker(
                 [43.7, 1.467],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_86813e4f1278a9ab3737c67e85ce5f60 = L.AwesomeMarkers.icon(
+            var icon_bdf76b388a363d8a0a8ccbe2d2ef82b0 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -685,24 +949,24 @@
             );
         
     
-        var popup_33b11750d2f340373c72558e3ee5bbc9 = L.popup({
+        var popup_abfbfc1fdcd339637e8c084b4c6e7ad3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_2da41f6fdc55ec0d07484af577742541 = $(`<div id="html_2da41f6fdc55ec0d07484af577742541" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pechbonnieu Coteaux HB</b><br>     Poule 2 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 40     </div>     </div>`)[0];
-                popup_33b11750d2f340373c72558e3ee5bbc9.setContent(html_2da41f6fdc55ec0d07484af577742541);
+                var html_46dad38b40128608ecbf45697079f5b9 = $(`<div id="html_46dad38b40128608ecbf45697079f5b9" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pechbonnieu Coteaux HB</b><br>     Poule 2 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 40<br>     G:7 N:0 P:3     </div>     </div>`)[0];
+                popup_abfbfc1fdcd339637e8c084b4c6e7ad3.setContent(html_46dad38b40128608ecbf45697079f5b9);
             
         
 
-        marker_f980f7ff4e545e425df8702b443c21d1.bindPopup(popup_33b11750d2f340373c72558e3ee5bbc9)
+        marker_f58624391b4f4194480057115db16e93.bindPopup(popup_abfbfc1fdcd339637e8c084b4c6e7ad3)
         ;
 
         
     
     
-            marker_f980f7ff4e545e425df8702b443c21d1.bindTooltip(
+            marker_f58624391b4f4194480057115db16e93.bindTooltip(
                 `<div>
                      Pechbonnieu Coteaux HB
                  </div>`,
@@ -712,17 +976,17 @@
             );
         
     
-                marker_f980f7ff4e545e425df8702b443c21d1.setIcon(icon_86813e4f1278a9ab3737c67e85ce5f60);
+                marker_f58624391b4f4194480057115db16e93.setIcon(icon_bdf76b388a363d8a0a8ccbe2d2ef82b0);
             
     
-            var marker_dc9e0cf48a73a4285043223a38fef756 = L.marker(
+            var marker_431c3a96ae3d94e571841495a73803fd = L.marker(
                 [45.184, 0.721],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_e93180fcbfb00c51a5deb3ca05d34853 = L.AwesomeMarkers.icon(
+            var icon_b17b7ff6a3904af3c4b9feaf1d4ef9dd = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -733,24 +997,24 @@
             );
         
     
-        var popup_4ed1e7cde1b86fb1eedaa9d27f923c8d = L.popup({
+        var popup_dae6f5bcc92313e169ccdf2c230a8c17 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_79b45a7664e1400b1f9e9c16e1c0795a = $(`<div id="html_79b45a7664e1400b1f9e9c16e1c0795a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Perigueux Handball</b><br>     Poule 3 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 137     </div>     </div>`)[0];
-                popup_4ed1e7cde1b86fb1eedaa9d27f923c8d.setContent(html_79b45a7664e1400b1f9e9c16e1c0795a);
+                var html_203a0d7035f0adfc431f84418ea62d8a = $(`<div id="html_203a0d7035f0adfc431f84418ea62d8a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Perigueux Handball</b><br>     Poule 3 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 30 | Diff: 137<br>     G:10 N:0 P:0     </div>     </div>`)[0];
+                popup_dae6f5bcc92313e169ccdf2c230a8c17.setContent(html_203a0d7035f0adfc431f84418ea62d8a);
             
         
 
-        marker_dc9e0cf48a73a4285043223a38fef756.bindPopup(popup_4ed1e7cde1b86fb1eedaa9d27f923c8d)
+        marker_431c3a96ae3d94e571841495a73803fd.bindPopup(popup_dae6f5bcc92313e169ccdf2c230a8c17)
         ;
 
         
     
     
-            marker_dc9e0cf48a73a4285043223a38fef756.bindTooltip(
+            marker_431c3a96ae3d94e571841495a73803fd.bindTooltip(
                 `<div>
                      Perigueux Handball
                  </div>`,
@@ -760,17 +1024,17 @@
             );
         
     
-                marker_dc9e0cf48a73a4285043223a38fef756.setIcon(icon_e93180fcbfb00c51a5deb3ca05d34853);
+                marker_431c3a96ae3d94e571841495a73803fd.setIcon(icon_b17b7ff6a3904af3c4b9feaf1d4ef9dd);
             
     
-            var marker_de09bc6e87ce31096623befae982bf85 = L.marker(
+            var marker_6151b5c894dbbdac106fae18cd7ea2f9 = L.marker(
                 [45.034, 3.093],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_087213a79340c334cf8c7d9fa97607f5 = L.AwesomeMarkers.icon(
+            var icon_3a482223f520f565887511f012f27812 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -781,24 +1045,24 @@
             );
         
     
-        var popup_0b0c444fe1c1a063883c488200a19a5d = L.popup({
+        var popup_13623c4cab82e135b54aa3799f7a0f7f = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_9670868c61f6ed7c19d17b46b4c4686c = $(`<div id="html_9670868c61f6ed7c19d17b46b4c4686c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Saint-Flour Handball</b><br>     Poule 3 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 2 | Perdus: 2<br>     Diff Buts: 33     </div>     </div>`)[0];
-                popup_0b0c444fe1c1a063883c488200a19a5d.setContent(html_9670868c61f6ed7c19d17b46b4c4686c);
+                var html_5d3faca6a1c957bc6bc3279110485305 = $(`<div id="html_5d3faca6a1c957bc6bc3279110485305" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Saint-Flour Handball</b><br>     Poule 3 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 33<br>     G:6 N:2 P:2     </div>     </div>`)[0];
+                popup_13623c4cab82e135b54aa3799f7a0f7f.setContent(html_5d3faca6a1c957bc6bc3279110485305);
             
         
 
-        marker_de09bc6e87ce31096623befae982bf85.bindPopup(popup_0b0c444fe1c1a063883c488200a19a5d)
+        marker_6151b5c894dbbdac106fae18cd7ea2f9.bindPopup(popup_13623c4cab82e135b54aa3799f7a0f7f)
         ;
 
         
     
     
-            marker_de09bc6e87ce31096623befae982bf85.bindTooltip(
+            marker_6151b5c894dbbdac106fae18cd7ea2f9.bindTooltip(
                 `<div>
                      Saint-Flour Handball
                  </div>`,
@@ -808,17 +1072,17 @@
             );
         
     
-                marker_de09bc6e87ce31096623befae982bf85.setIcon(icon_087213a79340c334cf8c7d9fa97607f5);
+                marker_6151b5c894dbbdac106fae18cd7ea2f9.setIcon(icon_3a482223f520f565887511f012f27812);
             
     
-            var marker_ff7b40cb135d0fdb8606832e4fb0e4f4 = L.marker(
+            var marker_8e39bd2830d659da2bb439ac02a9bf47 = L.marker(
                 [47.273, -2.213],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_581c163635ed29cb49f86b6118171dc6 = L.AwesomeMarkers.icon(
+            var icon_5ddf96169fcd8ab9df9ac55a4b7fd192 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -829,24 +1093,24 @@
             );
         
     
-        var popup_1e1394094c6640a93b45d70205d189a3 = L.popup({
+        var popup_19a9be9166108fd28dcec0b1e95f94e5 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ac9770f6e5eebc8ce67c96a07fcd9b05 = $(`<div id="html_ac9770f6e5eebc8ce67c96a07fcd9b05" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>St Nazaire Handball</b><br>     Poule 4 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 139     </div>     </div>`)[0];
-                popup_1e1394094c6640a93b45d70205d189a3.setContent(html_ac9770f6e5eebc8ce67c96a07fcd9b05);
+                var html_3180780870515a18e5d8008a3975250d = $(`<div id="html_3180780870515a18e5d8008a3975250d" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>St Nazaire Handball</b><br>     Poule 4 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 30 | Diff: 139<br>     G:10 N:0 P:0     </div>     </div>`)[0];
+                popup_19a9be9166108fd28dcec0b1e95f94e5.setContent(html_3180780870515a18e5d8008a3975250d);
             
         
 
-        marker_ff7b40cb135d0fdb8606832e4fb0e4f4.bindPopup(popup_1e1394094c6640a93b45d70205d189a3)
+        marker_8e39bd2830d659da2bb439ac02a9bf47.bindPopup(popup_19a9be9166108fd28dcec0b1e95f94e5)
         ;
 
         
     
     
-            marker_ff7b40cb135d0fdb8606832e4fb0e4f4.bindTooltip(
+            marker_8e39bd2830d659da2bb439ac02a9bf47.bindTooltip(
                 `<div>
                      St Nazaire Handball
                  </div>`,
@@ -856,17 +1120,17 @@
             );
         
     
-                marker_ff7b40cb135d0fdb8606832e4fb0e4f4.setIcon(icon_581c163635ed29cb49f86b6118171dc6);
+                marker_8e39bd2830d659da2bb439ac02a9bf47.setIcon(icon_5ddf96169fcd8ab9df9ac55a4b7fd192);
             
     
-            var marker_25db70a6780789055760f08dede26e02 = L.marker(
+            var marker_b444953d7d4a372f7364f57d7a7f90d0 = L.marker(
                 [46.67, -1.426],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_4ceb2d28bf7150e06b386ca97d394fad = L.AwesomeMarkers.icon(
+            var icon_b257c29395a2a8b4ebb6af74331e01f8 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -877,24 +1141,24 @@
             );
         
     
-        var popup_3f0604450c8b4a588fe620c8744bcb93 = L.popup({
+        var popup_8cee87e563e41940023684cd757213e0 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_95cee6ed0db42078b6f7b3b43673c967 = $(`<div id="html_95cee6ed0db42078b6f7b3b43673c967" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>La Roche sur Yon</b><br>     Poule 4 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 54     </div>     </div>`)[0];
-                popup_3f0604450c8b4a588fe620c8744bcb93.setContent(html_95cee6ed0db42078b6f7b3b43673c967);
+                var html_610716f562b0b6a3307910d12c39362e = $(`<div id="html_610716f562b0b6a3307910d12c39362e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>La Roche sur Yon</b><br>     Poule 4 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 54<br>     G:7 N:0 P:3     </div>     </div>`)[0];
+                popup_8cee87e563e41940023684cd757213e0.setContent(html_610716f562b0b6a3307910d12c39362e);
             
         
 
-        marker_25db70a6780789055760f08dede26e02.bindPopup(popup_3f0604450c8b4a588fe620c8744bcb93)
+        marker_b444953d7d4a372f7364f57d7a7f90d0.bindPopup(popup_8cee87e563e41940023684cd757213e0)
         ;
 
         
     
     
-            marker_25db70a6780789055760f08dede26e02.bindTooltip(
+            marker_b444953d7d4a372f7364f57d7a7f90d0.bindTooltip(
                 `<div>
                      La Roche sur Yon
                  </div>`,
@@ -904,17 +1168,17 @@
             );
         
     
-                marker_25db70a6780789055760f08dede26e02.setIcon(icon_4ceb2d28bf7150e06b386ca97d394fad);
+                marker_b444953d7d4a372f7364f57d7a7f90d0.setIcon(icon_b257c29395a2a8b4ebb6af74331e01f8);
             
     
-            var marker_9246d9d349b9cafa8f0ac13b07544c6d = L.marker(
+            var marker_e31f2a0c53432ff36213ef0108e6e8c7 = L.marker(
                 [47.205, -1.503],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_d672236091674b1d2c5fafbf25fd9ef0 = L.AwesomeMarkers.icon(
+            var icon_a2ae96b6c7f9a1cf033880c2c1bc06ca = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -925,24 +1189,24 @@
             );
         
     
-        var popup_48f908f8ae2b0cad70ddbeb2b50f1ba1 = L.popup({
+        var popup_430412f9bb96338a14981c5b73a0a6fc = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ec80fc62e097692399e1579e534cc48f = $(`<div id="html_ec80fc62e097692399e1579e534cc48f" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>St Sebastien Sud Loire</b><br>     Poule 5 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 9 | Nuls: 1 | Perdus: 0<br>     Diff Buts: 90     </div>     </div>`)[0];
-                popup_48f908f8ae2b0cad70ddbeb2b50f1ba1.setContent(html_ec80fc62e097692399e1579e534cc48f);
+                var html_9cb253a7e6a251cd14398e99e1767f56 = $(`<div id="html_9cb253a7e6a251cd14398e99e1767f56" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>St Sebastien Sud Loire</b><br>     Poule 5 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 29 | Diff: 90<br>     G:9 N:1 P:0     </div>     </div>`)[0];
+                popup_430412f9bb96338a14981c5b73a0a6fc.setContent(html_9cb253a7e6a251cd14398e99e1767f56);
             
         
 
-        marker_9246d9d349b9cafa8f0ac13b07544c6d.bindPopup(popup_48f908f8ae2b0cad70ddbeb2b50f1ba1)
+        marker_e31f2a0c53432ff36213ef0108e6e8c7.bindPopup(popup_430412f9bb96338a14981c5b73a0a6fc)
         ;
 
         
     
     
-            marker_9246d9d349b9cafa8f0ac13b07544c6d.bindTooltip(
+            marker_e31f2a0c53432ff36213ef0108e6e8c7.bindTooltip(
                 `<div>
                      St Sebastien Sud Loire
                  </div>`,
@@ -952,17 +1216,17 @@
             );
         
     
-                marker_9246d9d349b9cafa8f0ac13b07544c6d.setIcon(icon_d672236091674b1d2c5fafbf25fd9ef0);
+                marker_e31f2a0c53432ff36213ef0108e6e8c7.setIcon(icon_a2ae96b6c7f9a1cf033880c2c1bc06ca);
             
     
-            var marker_cdfda3f26bece2ed09efe30286b00194 = L.marker(
+            var marker_10cb252d2bf8730f6b74417c6bf62ba7 = L.marker(
                 [47.218, -1.553],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_f9b84afa13b93da796c5eeac95189b27 = L.AwesomeMarkers.icon(
+            var icon_9322acb88683af64b5ce76ee68216d89 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -973,24 +1237,24 @@
             );
         
     
-        var popup_76e2828d547ed7efece038ea9f4b13ca = L.popup({
+        var popup_7efbd7ff8176260ef8a4ea28a8571c1e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_9e6b41869ea2d921b57d9c524e90ef3a = $(`<div id="html_9e6b41869ea2d921b57d9c524e90ef3a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Nantes Loire Feminin</b><br>     Poule 5 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 65     </div>     </div>`)[0];
-                popup_76e2828d547ed7efece038ea9f4b13ca.setContent(html_9e6b41869ea2d921b57d9c524e90ef3a);
+                var html_6489b30cfe6bf64dbf864743c80a5d3e = $(`<div id="html_6489b30cfe6bf64dbf864743c80a5d3e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Nantes Loire Feminin</b><br>     Poule 5 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 25 | Diff: 65<br>     G:7 N:1 P:2     </div>     </div>`)[0];
+                popup_7efbd7ff8176260ef8a4ea28a8571c1e.setContent(html_6489b30cfe6bf64dbf864743c80a5d3e);
             
         
 
-        marker_cdfda3f26bece2ed09efe30286b00194.bindPopup(popup_76e2828d547ed7efece038ea9f4b13ca)
+        marker_10cb252d2bf8730f6b74417c6bf62ba7.bindPopup(popup_7efbd7ff8176260ef8a4ea28a8571c1e)
         ;
 
         
     
     
-            marker_cdfda3f26bece2ed09efe30286b00194.bindTooltip(
+            marker_10cb252d2bf8730f6b74417c6bf62ba7.bindTooltip(
                 `<div>
                      Nantes Loire Feminin
                  </div>`,
@@ -1000,17 +1264,17 @@
             );
         
     
-                marker_cdfda3f26bece2ed09efe30286b00194.setIcon(icon_f9b84afa13b93da796c5eeac95189b27);
+                marker_10cb252d2bf8730f6b74417c6bf62ba7.setIcon(icon_9322acb88683af64b5ce76ee68216d89);
             
     
-            var marker_c1aa43d9774350f98123eb3bc357d1ff = L.marker(
+            var marker_9d0bd89b506166d61d4c01b5fcbbd5df = L.marker(
                 [47.873, -3.921],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_4651feb6f0606046fbb7517cf11df8af = L.AwesomeMarkers.icon(
+            var icon_121176074d1794718cae962ba427188c = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -1021,24 +1285,24 @@
             );
         
     
-        var popup_5cec11d06b95c32a05e0c90077ac7a97 = L.popup({
+        var popup_5fb7f63d7c2f73938da894bd644ec280 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e661d1b24c67c65f0f59c76291685ab7 = $(`<div id="html_e661d1b24c67c65f0f59c76291685ab7" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Cornouaille</b><br>     Poule 5 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 78     </div>     </div>`)[0];
-                popup_5cec11d06b95c32a05e0c90077ac7a97.setContent(html_e661d1b24c67c65f0f59c76291685ab7);
+                var html_e1cf6b4fc623de9d3cb32eef378ce8d8 = $(`<div id="html_e1cf6b4fc623de9d3cb32eef378ce8d8" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Cornouaille</b><br>     Poule 5 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 78<br>     G:7 N:0 P:3     </div>     </div>`)[0];
+                popup_5fb7f63d7c2f73938da894bd644ec280.setContent(html_e1cf6b4fc623de9d3cb32eef378ce8d8);
             
         
 
-        marker_c1aa43d9774350f98123eb3bc357d1ff.bindPopup(popup_5cec11d06b95c32a05e0c90077ac7a97)
+        marker_9d0bd89b506166d61d4c01b5fcbbd5df.bindPopup(popup_5fb7f63d7c2f73938da894bd644ec280)
         ;
 
         
     
     
-            marker_c1aa43d9774350f98123eb3bc357d1ff.bindTooltip(
+            marker_9d0bd89b506166d61d4c01b5fcbbd5df.bindTooltip(
                 `<div>
                      Entente Cornouaille
                  </div>`,
@@ -1048,17 +1312,17 @@
             );
         
     
-                marker_c1aa43d9774350f98123eb3bc357d1ff.setIcon(icon_4651feb6f0606046fbb7517cf11df8af);
+                marker_9d0bd89b506166d61d4c01b5fcbbd5df.setIcon(icon_121176074d1794718cae962ba427188c);
             
     
-            var marker_dbd952fa2f5d5a00f11d52b03cddebe1 = L.marker(
+            var marker_7948158043532c36490aaa8e8d4c0630 = L.marker(
                 [47.902, 1.909],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_50f62abbdcb56b40ceddeb5a4b8ba841 = L.AwesomeMarkers.icon(
+            var icon_cbe1aed4d72e550d4a2c3bfc85e00209 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1069,24 +1333,24 @@
             );
         
     
-        var popup_3883e5566dd0ef10c75705d60cb02890 = L.popup({
+        var popup_343c14ff12d7252f39c885d943780bb0 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_0d424bb6f679f9e33057eb31360b8119 = $(`<div id="html_0d424bb6f679f9e33057eb31360b8119" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Feline HB Academie</b><br>     Poule 6 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 9 | Nuls: 0 | Perdus: 1<br>     Diff Buts: 60     </div>     </div>`)[0];
-                popup_3883e5566dd0ef10c75705d60cb02890.setContent(html_0d424bb6f679f9e33057eb31360b8119);
+                var html_a6a67fc1747bad1ce9497cf03a6f6778 = $(`<div id="html_a6a67fc1747bad1ce9497cf03a6f6778" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Feline HB Academie</b><br>     Poule 6 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 28 | Diff: 60<br>     G:9 N:0 P:1     </div>     </div>`)[0];
+                popup_343c14ff12d7252f39c885d943780bb0.setContent(html_a6a67fc1747bad1ce9497cf03a6f6778);
             
         
 
-        marker_dbd952fa2f5d5a00f11d52b03cddebe1.bindPopup(popup_3883e5566dd0ef10c75705d60cb02890)
+        marker_7948158043532c36490aaa8e8d4c0630.bindPopup(popup_343c14ff12d7252f39c885d943780bb0)
         ;
 
         
     
     
-            marker_dbd952fa2f5d5a00f11d52b03cddebe1.bindTooltip(
+            marker_7948158043532c36490aaa8e8d4c0630.bindTooltip(
                 `<div>
                      Feline HB Academie
                  </div>`,
@@ -1096,17 +1360,17 @@
             );
         
     
-                marker_dbd952fa2f5d5a00f11d52b03cddebe1.setIcon(icon_50f62abbdcb56b40ceddeb5a4b8ba841);
+                marker_7948158043532c36490aaa8e8d4c0630.setIcon(icon_cbe1aed4d72e550d4a2c3bfc85e00209);
             
     
-            var marker_020323b1bce405a21cbdfba78702005b = L.marker(
+            var marker_72cb4b236f8d320bfefe9827aa62d91e = L.marker(
                 [49.182, -0.37],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_1c5b974e41b0c15db3061c4430dba60a = L.AwesomeMarkers.icon(
+            var icon_5fba6b766c155e37f5b3afa4029f286c = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1117,24 +1381,24 @@
             );
         
     
-        var popup_31388d367522a6ae8a3022fd8fbaaf11 = L.popup({
+        var popup_ddfdc5120cf9fcef39fc3cea690c93ca = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e1ab612f693846e6a3b6d868d662a059 = $(`<div id="html_e1ab612f693846e6a3b6d868d662a059" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HB Feminin Caen Est</b><br>     Poule 6 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 0 | Perdus: 4<br>     Diff Buts: 50     </div>     </div>`)[0];
-                popup_31388d367522a6ae8a3022fd8fbaaf11.setContent(html_e1ab612f693846e6a3b6d868d662a059);
+                var html_a5e37e529682139a8db7d23f8ca8c1de = $(`<div id="html_a5e37e529682139a8db7d23f8ca8c1de" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HB Feminin Caen Est</b><br>     Poule 6 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 22 | Diff: 50<br>     G:6 N:0 P:4     </div>     </div>`)[0];
+                popup_ddfdc5120cf9fcef39fc3cea690c93ca.setContent(html_a5e37e529682139a8db7d23f8ca8c1de);
             
         
 
-        marker_020323b1bce405a21cbdfba78702005b.bindPopup(popup_31388d367522a6ae8a3022fd8fbaaf11)
+        marker_72cb4b236f8d320bfefe9827aa62d91e.bindPopup(popup_ddfdc5120cf9fcef39fc3cea690c93ca)
         ;
 
         
     
     
-            marker_020323b1bce405a21cbdfba78702005b.bindTooltip(
+            marker_72cb4b236f8d320bfefe9827aa62d91e.bindTooltip(
                 `<div>
                      HB Feminin Caen Est
                  </div>`,
@@ -1144,17 +1408,17 @@
             );
         
     
-                marker_020323b1bce405a21cbdfba78702005b.setIcon(icon_1c5b974e41b0c15db3061c4430dba60a);
+                marker_72cb4b236f8d320bfefe9827aa62d91e.setIcon(icon_5fba6b766c155e37f5b3afa4029f286c);
             
     
-            var marker_676a093b5c1412267575fc2555702990 = L.marker(
+            var marker_2758677c43b23cba97487f232ab15a5d = L.marker(
                 [48.802, 2.485],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_716cc023dac54d0890ecd93da4a1c1ac = L.AwesomeMarkers.icon(
+            var icon_4adfba3676a468f41cd556deb6ac061c = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1165,24 +1429,24 @@
             );
         
     
-        var popup_f53a7430b166f3e43923c23788bde494 = L.popup({
+        var popup_dd864eb0aa2c2cac1d342234737fa216 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_92c43611331fae21d74d049db2a76736 = $(`<div id="html_92c43611331fae21d74d049db2a76736" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Stella Saint-Maur HB</b><br>     Poule 7 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 0 | Perdus: 2<br>     Diff Buts: 113     </div>     </div>`)[0];
-                popup_f53a7430b166f3e43923c23788bde494.setContent(html_92c43611331fae21d74d049db2a76736);
+                var html_17f5e994c1c1a719db571f1366c94f2b = $(`<div id="html_17f5e994c1c1a719db571f1366c94f2b" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Stella Saint-Maur HB</b><br>     Poule 7 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 26 | Diff: 113<br>     G:8 N:0 P:2     </div>     </div>`)[0];
+                popup_dd864eb0aa2c2cac1d342234737fa216.setContent(html_17f5e994c1c1a719db571f1366c94f2b);
             
         
 
-        marker_676a093b5c1412267575fc2555702990.bindPopup(popup_f53a7430b166f3e43923c23788bde494)
+        marker_2758677c43b23cba97487f232ab15a5d.bindPopup(popup_dd864eb0aa2c2cac1d342234737fa216)
         ;
 
         
     
     
-            marker_676a093b5c1412267575fc2555702990.bindTooltip(
+            marker_2758677c43b23cba97487f232ab15a5d.bindTooltip(
                 `<div>
                      Stella Saint-Maur HB
                  </div>`,
@@ -1192,17 +1456,17 @@
             );
         
     
-                marker_676a093b5c1412267575fc2555702990.setIcon(icon_716cc023dac54d0890ecd93da4a1c1ac);
+                marker_2758677c43b23cba97487f232ab15a5d.setIcon(icon_4adfba3676a468f41cd556deb6ac061c);
             
     
-            var marker_4f1b5c7770c005c773ceba3f0e608df0 = L.marker(
+            var marker_e88846ad4d0adae06ef7892c7b854c74 = L.marker(
                 [48.864, 2.443],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_e024827b678dcc7918eb87e0f88308f0 = L.AwesomeMarkers.icon(
+            var icon_76ba81f876f9703b691e3a3087953cba = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1213,24 +1477,24 @@
             );
         
     
-        var popup_c30f42a51bddb5030b29a328805b00ee = L.popup({
+        var popup_e6aaf06bab7dee915ea22c6818e4871e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_317bdf75d25ef7b4f232a01308e8a9aa = $(`<div id="html_317bdf75d25ef7b4f232a01308e8a9aa" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Sud 93</b><br>     Poule 7 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 108     </div>     </div>`)[0];
-                popup_c30f42a51bddb5030b29a328805b00ee.setContent(html_317bdf75d25ef7b4f232a01308e8a9aa);
+                var html_c09581c8b4b666fa3d3b791a59214e09 = $(`<div id="html_c09581c8b4b666fa3d3b791a59214e09" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Sud 93</b><br>     Poule 7 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 25 | Diff: 108<br>     G:7 N:1 P:2     </div>     </div>`)[0];
+                popup_e6aaf06bab7dee915ea22c6818e4871e.setContent(html_c09581c8b4b666fa3d3b791a59214e09);
             
         
 
-        marker_4f1b5c7770c005c773ceba3f0e608df0.bindPopup(popup_c30f42a51bddb5030b29a328805b00ee)
+        marker_e88846ad4d0adae06ef7892c7b854c74.bindPopup(popup_e6aaf06bab7dee915ea22c6818e4871e)
         ;
 
         
     
     
-            marker_4f1b5c7770c005c773ceba3f0e608df0.bindTooltip(
+            marker_e88846ad4d0adae06ef7892c7b854c74.bindTooltip(
                 `<div>
                      Entente Sud 93
                  </div>`,
@@ -1240,17 +1504,17 @@
             );
         
     
-                marker_4f1b5c7770c005c773ceba3f0e608df0.setIcon(icon_e024827b678dcc7918eb87e0f88308f0);
+                marker_e88846ad4d0adae06ef7892c7b854c74.setIcon(icon_76ba81f876f9703b691e3a3087953cba);
             
     
-            var marker_0711f1172bc60290dc56fe94e6fc99cd = L.marker(
+            var marker_d0984d42ba3e8d30a384976375dab0d8 = L.marker(
                 [48.854, 2.624],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_3f4e28c817055295d06c74aed321ef7c = L.AwesomeMarkers.icon(
+            var icon_22781b293423563726c586d663a7cd95 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1261,24 +1525,24 @@
             );
         
     
-        var popup_052af5619c31ffdb4fdbdeba878cd16e = L.popup({
+        var popup_388f912b5a68d447bff6ac3918d5c4fe = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_4dc27985cd9e115235aa6a1c9c578864 = $(`<div id="html_4dc27985cd9e115235aa6a1c9c578864" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Elite 77</b><br>     Poule 8 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 111     </div>     </div>`)[0];
-                popup_052af5619c31ffdb4fdbdeba878cd16e.setContent(html_4dc27985cd9e115235aa6a1c9c578864);
+                var html_c192644a9f767a009ffad4c1d0fcf7f8 = $(`<div id="html_c192644a9f767a009ffad4c1d0fcf7f8" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Elite 77</b><br>     Poule 8 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 30 | Diff: 111<br>     G:10 N:0 P:0     </div>     </div>`)[0];
+                popup_388f912b5a68d447bff6ac3918d5c4fe.setContent(html_c192644a9f767a009ffad4c1d0fcf7f8);
             
         
 
-        marker_0711f1172bc60290dc56fe94e6fc99cd.bindPopup(popup_052af5619c31ffdb4fdbdeba878cd16e)
+        marker_d0984d42ba3e8d30a384976375dab0d8.bindPopup(popup_388f912b5a68d447bff6ac3918d5c4fe)
         ;
 
         
     
     
-            marker_0711f1172bc60290dc56fe94e6fc99cd.bindTooltip(
+            marker_d0984d42ba3e8d30a384976375dab0d8.bindTooltip(
                 `<div>
                      Entente Elite 77
                  </div>`,
@@ -1288,17 +1552,17 @@
             );
         
     
-                marker_0711f1172bc60290dc56fe94e6fc99cd.setIcon(icon_3f4e28c817055295d06c74aed321ef7c);
+                marker_d0984d42ba3e8d30a384976375dab0d8.setIcon(icon_22781b293423563726c586d663a7cd95);
             
     
-            var marker_a4bd74a98ce46aa008ed175de6d6c82c = L.marker(
+            var marker_ac0eb8ae8e8a29409708f8d512f3657b = L.marker(
                 [48.771, 2.03],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_0d60b951406cb5b8b45ef3cbc9733428 = L.AwesomeMarkers.icon(
+            var icon_7e42daf5c5bb4d84700f9af9ee95a4f6 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1309,24 +1573,24 @@
             );
         
     
-        var popup_1956c2d9ba9368bff07819500ba24346 = L.popup({
+        var popup_e72d7d26429e6a2a98bcee125cd91251 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f1fcb23d2c7dfadaaf38578191d46368 = $(`<div id="html_f1fcb23d2c7dfadaaf38578191d46368" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Yvelines HB</b><br>     Poule 8 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 26     </div>     </div>`)[0];
-                popup_1956c2d9ba9368bff07819500ba24346.setContent(html_f1fcb23d2c7dfadaaf38578191d46368);
+                var html_d6a5217d9c392f152970b95212dbca58 = $(`<div id="html_d6a5217d9c392f152970b95212dbca58" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Yvelines HB</b><br>     Poule 8 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 26<br>     G:7 N:0 P:3     </div>     </div>`)[0];
+                popup_e72d7d26429e6a2a98bcee125cd91251.setContent(html_d6a5217d9c392f152970b95212dbca58);
             
         
 
-        marker_a4bd74a98ce46aa008ed175de6d6c82c.bindPopup(popup_1956c2d9ba9368bff07819500ba24346)
+        marker_ac0eb8ae8e8a29409708f8d512f3657b.bindPopup(popup_e72d7d26429e6a2a98bcee125cd91251)
         ;
 
         
     
     
-            marker_a4bd74a98ce46aa008ed175de6d6c82c.bindTooltip(
+            marker_ac0eb8ae8e8a29409708f8d512f3657b.bindTooltip(
                 `<div>
                      Yvelines HB
                  </div>`,
@@ -1336,17 +1600,17 @@
             );
         
     
-                marker_a4bd74a98ce46aa008ed175de6d6c82c.setIcon(icon_0d60b951406cb5b8b45ef3cbc9733428);
+                marker_ac0eb8ae8e8a29409708f8d512f3657b.setIcon(icon_7e42daf5c5bb4d84700f9af9ee95a4f6);
             
     
-            var marker_f1becc6c967d5a6812539f2c85bca5f5 = L.marker(
+            var marker_d75a7c2cf7f84b62f9b67e05f28233da = L.marker(
                 [48.824, 2.274],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_bc1cf2cd08a80d12640521c25414dc5e = L.AwesomeMarkers.icon(
+            var icon_6849785f2c76d497323ff3aef58e97bd = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1357,24 +1621,24 @@
             );
         
     
-        var popup_3f964d04fd1fdd17d40484676295d617 = L.popup({
+        var popup_cf2b1fbe3adeacc1f55a14f010b2e33b = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_78d2276acb0cd6e4e03eec10a3b65042 = $(`<div id="html_78d2276acb0cd6e4e03eec10a3b65042" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Issy-Paris Hand</b><br>     Poule 9 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 2 | Perdus: 1<br>     Diff Buts: 91     </div>     </div>`)[0];
-                popup_3f964d04fd1fdd17d40484676295d617.setContent(html_78d2276acb0cd6e4e03eec10a3b65042);
+                var html_f088db33558450faafa0eeac2ffef5eb = $(`<div id="html_f088db33558450faafa0eeac2ffef5eb" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Issy-Paris Hand</b><br>     Poule 9 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 26 | Diff: 91<br>     G:7 N:2 P:1     </div>     </div>`)[0];
+                popup_cf2b1fbe3adeacc1f55a14f010b2e33b.setContent(html_f088db33558450faafa0eeac2ffef5eb);
             
         
 
-        marker_f1becc6c967d5a6812539f2c85bca5f5.bindPopup(popup_3f964d04fd1fdd17d40484676295d617)
+        marker_d75a7c2cf7f84b62f9b67e05f28233da.bindPopup(popup_cf2b1fbe3adeacc1f55a14f010b2e33b)
         ;
 
         
     
     
-            marker_f1becc6c967d5a6812539f2c85bca5f5.bindTooltip(
+            marker_d75a7c2cf7f84b62f9b67e05f28233da.bindTooltip(
                 `<div>
                      Issy-Paris Hand
                  </div>`,
@@ -1384,17 +1648,17 @@
             );
         
     
-                marker_f1becc6c967d5a6812539f2c85bca5f5.setIcon(icon_bc1cf2cd08a80d12640521c25414dc5e);
+                marker_d75a7c2cf7f84b62f9b67e05f28233da.setIcon(icon_6849785f2c76d497323ff3aef58e97bd);
             
     
-            var marker_b5fb3715f186dba76f1430f0f5686fa5 = L.marker(
+            var marker_ffa845f964289f639a6e8c39a352886d = L.marker(
                 [50.203, 3.803],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_011e065a8b890121956fa05b2f604711 = L.AwesomeMarkers.icon(
+            var icon_8658fd34e9fdfadb2cba7220547c3ec2 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1405,24 +1669,24 @@
             );
         
     
-        var popup_eb363cd6972a3590cb79fe32b996b1e8 = L.popup({
+        var popup_7f1c5aedf401c6367a6f064f4b6ef5f3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_7b88869461ab71042658cac20133f614 = $(`<div id="html_7b88869461ab71042658cac20133f614" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Sambre Avesnois HB</b><br>     Poule 9 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 2 | Perdus: 1<br>     Diff Buts: 84     </div>     </div>`)[0];
-                popup_eb363cd6972a3590cb79fe32b996b1e8.setContent(html_7b88869461ab71042658cac20133f614);
+                var html_35f7b8f403f4a8a2183dbdabc8d5711c = $(`<div id="html_35f7b8f403f4a8a2183dbdabc8d5711c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Sambre Avesnois HB</b><br>     Poule 9 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 26 | Diff: 84<br>     G:7 N:2 P:1     </div>     </div>`)[0];
+                popup_7f1c5aedf401c6367a6f064f4b6ef5f3.setContent(html_35f7b8f403f4a8a2183dbdabc8d5711c);
             
         
 
-        marker_b5fb3715f186dba76f1430f0f5686fa5.bindPopup(popup_eb363cd6972a3590cb79fe32b996b1e8)
+        marker_ffa845f964289f639a6e8c39a352886d.bindPopup(popup_7f1c5aedf401c6367a6f064f4b6ef5f3)
         ;
 
         
     
     
-            marker_b5fb3715f186dba76f1430f0f5686fa5.bindTooltip(
+            marker_ffa845f964289f639a6e8c39a352886d.bindTooltip(
                 `<div>
                      Sambre Avesnois HB
                  </div>`,
@@ -1432,17 +1696,17 @@
             );
         
     
-                marker_b5fb3715f186dba76f1430f0f5686fa5.setIcon(icon_011e065a8b890121956fa05b2f604711);
+                marker_ffa845f964289f639a6e8c39a352886d.setIcon(icon_8658fd34e9fdfadb2cba7220547c3ec2);
             
     
-            var marker_d627fef9a166e2b7656c3183635cbecf = L.marker(
+            var marker_7f2343bd44ddbffc0bba45e607dc2036 = L.marker(
                 [50.637, 3.013],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_fa39a3851c6a921dc0c2df5317da28f1 = L.AwesomeMarkers.icon(
+            var icon_9021b791c38e186ffed4efda2eff792c = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -1453,24 +1717,24 @@
             );
         
     
-        var popup_cb61a05566c3ac81a9ab2548d1a76b82 = L.popup({
+        var popup_1eae52b59a68fc93e9808858dfe25f49 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_581c5e8dc023dcc02f17c34b1dc8c614 = $(`<div id="html_581c5e8dc023dcc02f17c34b1dc8c614" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Lille Metropole HB</b><br>     Poule 9 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 63     </div>     </div>`)[0];
-                popup_cb61a05566c3ac81a9ab2548d1a76b82.setContent(html_581c5e8dc023dcc02f17c34b1dc8c614);
+                var html_aa479dd33cbdc53341653f584d4e770b = $(`<div id="html_aa479dd33cbdc53341653f584d4e770b" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Lille Metropole HB</b><br>     Poule 9 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 63<br>     G:7 N:0 P:3     </div>     </div>`)[0];
+                popup_1eae52b59a68fc93e9808858dfe25f49.setContent(html_aa479dd33cbdc53341653f584d4e770b);
             
         
 
-        marker_d627fef9a166e2b7656c3183635cbecf.bindPopup(popup_cb61a05566c3ac81a9ab2548d1a76b82)
+        marker_7f2343bd44ddbffc0bba45e607dc2036.bindPopup(popup_1eae52b59a68fc93e9808858dfe25f49)
         ;
 
         
     
     
-            marker_d627fef9a166e2b7656c3183635cbecf.bindTooltip(
+            marker_7f2343bd44ddbffc0bba45e607dc2036.bindTooltip(
                 `<div>
                      Lille Metropole HB
                  </div>`,
@@ -1480,17 +1744,17 @@
             );
         
     
-                marker_d627fef9a166e2b7656c3183635cbecf.setIcon(icon_fa39a3851c6a921dc0c2df5317da28f1);
+                marker_7f2343bd44ddbffc0bba45e607dc2036.setIcon(icon_9021b791c38e186ffed4efda2eff792c);
             
     
-            var marker_c0fa9edcbae00c0fb98da9964756ee59 = L.marker(
+            var marker_3a6b09886fa2c03ebe1baa34a943689e = L.marker(
                 [49.119, 6.175],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_1b1333abd1bc7729ed3515a3f6df1d4f = L.AwesomeMarkers.icon(
+            var icon_8d6890dce24f9b9d01b34b4919217f63 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1501,24 +1765,24 @@
             );
         
     
-        var popup_fd69e5f038a2aea88f6598654b48aab0 = L.popup({
+        var popup_33e355716895d7044bbdffa93f514cd3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_6c5a9b3888dd058a454ee57a3a42c52d = $(`<div id="html_6c5a9b3888dd058a454ee57a3a42c52d" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Metz Handball</b><br>     Poule 10 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 9 | Nuls: 0 | Perdus: 1<br>     Diff Buts: 72     </div>     </div>`)[0];
-                popup_fd69e5f038a2aea88f6598654b48aab0.setContent(html_6c5a9b3888dd058a454ee57a3a42c52d);
+                var html_42bc17422425c78d7f40aa13aab50727 = $(`<div id="html_42bc17422425c78d7f40aa13aab50727" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Metz Handball</b><br>     Poule 10 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 28 | Diff: 72<br>     G:9 N:0 P:1     </div>     </div>`)[0];
+                popup_33e355716895d7044bbdffa93f514cd3.setContent(html_42bc17422425c78d7f40aa13aab50727);
             
         
 
-        marker_c0fa9edcbae00c0fb98da9964756ee59.bindPopup(popup_fd69e5f038a2aea88f6598654b48aab0)
+        marker_3a6b09886fa2c03ebe1baa34a943689e.bindPopup(popup_33e355716895d7044bbdffa93f514cd3)
         ;
 
         
     
     
-            marker_c0fa9edcbae00c0fb98da9964756ee59.bindTooltip(
+            marker_3a6b09886fa2c03ebe1baa34a943689e.bindTooltip(
                 `<div>
                      Metz Handball
                  </div>`,
@@ -1528,17 +1792,17 @@
             );
         
     
-                marker_c0fa9edcbae00c0fb98da9964756ee59.setIcon(icon_1b1333abd1bc7729ed3515a3f6df1d4f);
+                marker_3a6b09886fa2c03ebe1baa34a943689e.setIcon(icon_8d6890dce24f9b9d01b34b4919217f63);
             
     
-            var marker_bd3b0510b32753736d4d694068f210a1 = L.marker(
+            var marker_26b8d128712e1f02a8f1b35e7451e828 = L.marker(
                 [49.356, 6.191],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_7a86cad0620f822ff30c9be3bc72276e = L.AwesomeMarkers.icon(
+            var icon_a91baf54ed4546f8652a4a4cb38010c3 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1549,24 +1813,24 @@
             );
         
     
-        var popup_804e65e2a9ea683b23637916a68c3a3c = L.popup({
+        var popup_26d5617c3f2c27d6fcc9fb0fddb68557 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_04459df1f30df65d05e820ab1262b9e5 = $(`<div id="html_04459df1f30df65d05e820ab1262b9e5" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Yutz HB</b><br>     Poule 10 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 0 | Perdus: 4<br>     Diff Buts: 29     </div>     </div>`)[0];
-                popup_804e65e2a9ea683b23637916a68c3a3c.setContent(html_04459df1f30df65d05e820ab1262b9e5);
+                var html_4163416d54dab3b94ebad96a790650da = $(`<div id="html_4163416d54dab3b94ebad96a790650da" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Yutz HB</b><br>     Poule 10 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 22 | Diff: 29<br>     G:6 N:0 P:4     </div>     </div>`)[0];
+                popup_26d5617c3f2c27d6fcc9fb0fddb68557.setContent(html_4163416d54dab3b94ebad96a790650da);
             
         
 
-        marker_bd3b0510b32753736d4d694068f210a1.bindPopup(popup_804e65e2a9ea683b23637916a68c3a3c)
+        marker_26b8d128712e1f02a8f1b35e7451e828.bindPopup(popup_26d5617c3f2c27d6fcc9fb0fddb68557)
         ;
 
         
     
     
-            marker_bd3b0510b32753736d4d694068f210a1.bindTooltip(
+            marker_26b8d128712e1f02a8f1b35e7451e828.bindTooltip(
                 `<div>
                      Entente Yutz HB
                  </div>`,
@@ -1576,17 +1840,17 @@
             );
         
     
-                marker_bd3b0510b32753736d4d694068f210a1.setIcon(icon_7a86cad0620f822ff30c9be3bc72276e);
+                marker_26b8d128712e1f02a8f1b35e7451e828.setIcon(icon_a91baf54ed4546f8652a4a4cb38010c3);
             
     
-            var marker_c8b767d274c3305ec30a436586fe1fe7 = L.marker(
+            var marker_1de3420a69f6e239f4d1440b794231a4 = L.marker(
                 [47.194, 6.16],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_50238cf6d356a0f4cc796e3b831692e8 = L.AwesomeMarkers.icon(
+            var icon_b5cadf3e0f564c32a8857d4ecc92cd94 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1597,24 +1861,24 @@
             );
         
     
-        var popup_4ae9c9964740402ab5511daee0eca37c = L.popup({
+        var popup_70a0006932a040dbcd4dd03f91baa802 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_777b4ac93ba78707a1e442020de44da0 = $(`<div id="html_777b4ac93ba78707a1e442020de44da0" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Saone Mamirolle</b><br>     Poule 11 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 1 | Perdus: 1<br>     Diff Buts: 64     </div>     </div>`)[0];
-                popup_4ae9c9964740402ab5511daee0eca37c.setContent(html_777b4ac93ba78707a1e442020de44da0);
+                var html_9e4d4435a9977e9ab12faf14152dab4a = $(`<div id="html_9e4d4435a9977e9ab12faf14152dab4a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Saone Mamirolle</b><br>     Poule 11 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 27 | Diff: 64<br>     G:8 N:1 P:1     </div>     </div>`)[0];
+                popup_70a0006932a040dbcd4dd03f91baa802.setContent(html_9e4d4435a9977e9ab12faf14152dab4a);
             
         
 
-        marker_c8b767d274c3305ec30a436586fe1fe7.bindPopup(popup_4ae9c9964740402ab5511daee0eca37c)
+        marker_1de3420a69f6e239f4d1440b794231a4.bindPopup(popup_70a0006932a040dbcd4dd03f91baa802)
         ;
 
         
     
     
-            marker_c8b767d274c3305ec30a436586fe1fe7.bindTooltip(
+            marker_1de3420a69f6e239f4d1440b794231a4.bindTooltip(
                 `<div>
                      Entente Saone Mamirolle
                  </div>`,
@@ -1624,17 +1888,17 @@
             );
         
     
-                marker_c8b767d274c3305ec30a436586fe1fe7.setIcon(icon_50238cf6d356a0f4cc796e3b831692e8);
+                marker_1de3420a69f6e239f4d1440b794231a4.setIcon(icon_b5cadf3e0f564c32a8857d4ecc92cd94);
             
     
-            var marker_c1ea3ca90fd28286eda043e1033ff47a = L.marker(
+            var marker_31d55f26486eb728b81aa6d71deeb684 = L.marker(
                 [48.577, 7.63],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_7cc2edf8950d8131706b160b350caa43 = L.AwesomeMarkers.icon(
+            var icon_f8d3b5c6bbf2a86599ecf88b0067cb93 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1645,24 +1909,24 @@
             );
         
     
-        var popup_2502e09aa5f06f6767e1b12f4d482c53 = L.popup({
+        var popup_be950b43a341ad33912a5411f2b70d57 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_355e2b3378ae5a542f3deeb792ace019 = $(`<div id="html_355e2b3378ae5a542f3deeb792ace019" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Strasbourg Achenheim</b><br>     Poule 11 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 71     </div>     </div>`)[0];
-                popup_2502e09aa5f06f6767e1b12f4d482c53.setContent(html_355e2b3378ae5a542f3deeb792ace019);
+                var html_44dca350215e27f9d13247771212338d = $(`<div id="html_44dca350215e27f9d13247771212338d" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Strasbourg Achenheim</b><br>     Poule 11 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 25 | Diff: 71<br>     G:7 N:1 P:2     </div>     </div>`)[0];
+                popup_be950b43a341ad33912a5411f2b70d57.setContent(html_44dca350215e27f9d13247771212338d);
             
         
 
-        marker_c1ea3ca90fd28286eda043e1033ff47a.bindPopup(popup_2502e09aa5f06f6767e1b12f4d482c53)
+        marker_31d55f26486eb728b81aa6d71deeb684.bindPopup(popup_be950b43a341ad33912a5411f2b70d57)
         ;
 
         
     
     
-            marker_c1ea3ca90fd28286eda043e1033ff47a.bindTooltip(
+            marker_31d55f26486eb728b81aa6d71deeb684.bindTooltip(
                 `<div>
                      Strasbourg Achenheim
                  </div>`,
@@ -1672,17 +1936,17 @@
             );
         
     
-                marker_c1ea3ca90fd28286eda043e1033ff47a.setIcon(icon_7cc2edf8950d8131706b160b350caa43);
+                marker_31d55f26486eb728b81aa6d71deeb684.setIcon(icon_f8d3b5c6bbf2a86599ecf88b0067cb93);
             
     
-            var marker_a4cda7fd0c154dcafa79ba4b87129bd6 = L.marker(
+            var marker_561b248eac9f52ac073eb8e600f434b0 = L.marker(
                 [47.237, 6.024],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_2fc33949342078f161613b0760871452 = L.AwesomeMarkers.icon(
+            var icon_f1dab657cddc3504c65705b91189cfc0 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1693,24 +1957,24 @@
             );
         
     
-        var popup_22515a8a9762436be1a2cdfae5208ed2 = L.popup({
+        var popup_175e81626015b4c14996b6f5fe319a76 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e1d301a9cdddb7ba830c86206f33eeef = $(`<div id="html_e1d301a9cdddb7ba830c86206f33eeef" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Palente Besancon HB</b><br>     Poule 12 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 124     </div>     </div>`)[0];
-                popup_22515a8a9762436be1a2cdfae5208ed2.setContent(html_e1d301a9cdddb7ba830c86206f33eeef);
+                var html_f4ab608ba88594810bf7fb3b348c4fe6 = $(`<div id="html_f4ab608ba88594810bf7fb3b348c4fe6" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Palente Besancon HB</b><br>     Poule 12 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 30 | Diff: 124<br>     G:10 N:0 P:0     </div>     </div>`)[0];
+                popup_175e81626015b4c14996b6f5fe319a76.setContent(html_f4ab608ba88594810bf7fb3b348c4fe6);
             
         
 
-        marker_a4cda7fd0c154dcafa79ba4b87129bd6.bindPopup(popup_22515a8a9762436be1a2cdfae5208ed2)
+        marker_561b248eac9f52ac073eb8e600f434b0.bindPopup(popup_175e81626015b4c14996b6f5fe319a76)
         ;
 
         
     
     
-            marker_a4cda7fd0c154dcafa79ba4b87129bd6.bindTooltip(
+            marker_561b248eac9f52ac073eb8e600f434b0.bindTooltip(
                 `<div>
                      Palente Besancon HB
                  </div>`,
@@ -1720,17 +1984,17 @@
             );
         
     
-                marker_a4cda7fd0c154dcafa79ba4b87129bd6.setIcon(icon_2fc33949342078f161613b0760871452);
+                marker_561b248eac9f52ac073eb8e600f434b0.setIcon(icon_f1dab657cddc3504c65705b91189cfc0);
             
     
-            var marker_d9fa151f7b23a26a4d6d3df797e06fc1 = L.marker(
+            var marker_1a2c3e747b3dc8ecfad2d728c010f9d5 = L.marker(
                 [47.322, 5.041],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_e4dd0b96768cce4687ae9ebfd3878ade = L.AwesomeMarkers.icon(
+            var icon_65dcde128bc313f5d4f398c2263f5e85 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1741,24 +2005,24 @@
             );
         
     
-        var popup_3f55738b542fc87d23935407cec5f21d = L.popup({
+        var popup_187ef2325485c81624872e7af978c8ef = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_8eabc9e520097b1304d85ca009778ee1 = $(`<div id="html_8eabc9e520097b1304d85ca009778ee1" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>JDA Dijon HB</b><br>     Poule 12 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 0 | Perdus: 2<br>     Diff Buts: 93     </div>     </div>`)[0];
-                popup_3f55738b542fc87d23935407cec5f21d.setContent(html_8eabc9e520097b1304d85ca009778ee1);
+                var html_59ce170cf73869cb403fd053a6547589 = $(`<div id="html_59ce170cf73869cb403fd053a6547589" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>JDA Dijon HB</b><br>     Poule 12 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 26 | Diff: 93<br>     G:8 N:0 P:2     </div>     </div>`)[0];
+                popup_187ef2325485c81624872e7af978c8ef.setContent(html_59ce170cf73869cb403fd053a6547589);
             
         
 
-        marker_d9fa151f7b23a26a4d6d3df797e06fc1.bindPopup(popup_3f55738b542fc87d23935407cec5f21d)
+        marker_1a2c3e747b3dc8ecfad2d728c010f9d5.bindPopup(popup_187ef2325485c81624872e7af978c8ef)
         ;
 
         
     
     
-            marker_d9fa151f7b23a26a4d6d3df797e06fc1.bindTooltip(
+            marker_1a2c3e747b3dc8ecfad2d728c010f9d5.bindTooltip(
                 `<div>
                      JDA Dijon HB
                  </div>`,
@@ -1768,17 +2032,17 @@
             );
         
     
-                marker_d9fa151f7b23a26a4d6d3df797e06fc1.setIcon(icon_e4dd0b96768cce4687ae9ebfd3878ade);
+                marker_1a2c3e747b3dc8ecfad2d728c010f9d5.setIcon(icon_65dcde128bc313f5d4f398c2263f5e85);
             
     
-            var marker_a357f95a3f337961ef394512e7e6a65b = L.marker(
+            var marker_e8c797c02d89fb4f70304789f87cd047 = L.marker(
                 [45.764, 4.835],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_15c6e4163525847b73242dfcadf17963 = L.AwesomeMarkers.icon(
+            var icon_f00e94fb7c9c838705ffcb7024741a34 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1789,24 +2053,24 @@
             );
         
     
-        var popup_429b5e4a2e458191f2fa80ab0ca826a9 = L.popup({
+        var popup_b61b840caad6804c361f054b62ddb0d1 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_572a6fc08d0e9904c885a93ae6279924 = $(`<div id="html_572a6fc08d0e9904c885a93ae6279924" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Lyon Metropole HB</b><br>     Poule 13 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 0 | Perdus: 2<br>     Diff Buts: 85     </div>     </div>`)[0];
-                popup_429b5e4a2e458191f2fa80ab0ca826a9.setContent(html_572a6fc08d0e9904c885a93ae6279924);
+                var html_5b87cb4f4fbab0141b6fc566cd732c2c = $(`<div id="html_5b87cb4f4fbab0141b6fc566cd732c2c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Lyon Metropole HB</b><br>     Poule 13 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 26 | Diff: 85<br>     G:8 N:0 P:2     </div>     </div>`)[0];
+                popup_b61b840caad6804c361f054b62ddb0d1.setContent(html_5b87cb4f4fbab0141b6fc566cd732c2c);
             
         
 
-        marker_a357f95a3f337961ef394512e7e6a65b.bindPopup(popup_429b5e4a2e458191f2fa80ab0ca826a9)
+        marker_e8c797c02d89fb4f70304789f87cd047.bindPopup(popup_b61b840caad6804c361f054b62ddb0d1)
         ;
 
         
     
     
-            marker_a357f95a3f337961ef394512e7e6a65b.bindTooltip(
+            marker_e8c797c02d89fb4f70304789f87cd047.bindTooltip(
                 `<div>
                      Lyon Metropole HB
                  </div>`,
@@ -1816,17 +2080,17 @@
             );
         
     
-                marker_a357f95a3f337961ef394512e7e6a65b.setIcon(icon_15c6e4163525847b73242dfcadf17963);
+                marker_e8c797c02d89fb4f70304789f87cd047.setIcon(icon_f00e94fb7c9c838705ffcb7024741a34);
             
     
-            var marker_d427dabb4815bf791524b72ae55ea91f = L.marker(
+            var marker_73a3e569fcac28b49894146db919f4b2 = L.marker(
                 [47.288, 5.064],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_380bcc17e20b01958df5069e2772f411 = L.AwesomeMarkers.icon(
+            var icon_126fae68591c750b84fce6af2de532e6 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1837,24 +2101,24 @@
             );
         
     
-        var popup_3b461152292949cb94cab5a87f4fdc4e = L.popup({
+        var popup_4f0a1ef0fc0b627f1203b8bc9547401f = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_a88e85f8bc7d1b7cd2a21ea3743ac51c = $(`<div id="html_a88e85f8bc7d1b7cd2a21ea3743ac51c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>ALC Longvic / Chevigny</b><br>     Poule 13 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 0 | Perdus: 2<br>     Diff Buts: 32     </div>     </div>`)[0];
-                popup_3b461152292949cb94cab5a87f4fdc4e.setContent(html_a88e85f8bc7d1b7cd2a21ea3743ac51c);
+                var html_c3e88f221958d4795a92992af5eb3c0e = $(`<div id="html_c3e88f221958d4795a92992af5eb3c0e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>ALC Longvic / Chevigny</b><br>     Poule 13 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 26 | Diff: 32<br>     G:8 N:0 P:2     </div>     </div>`)[0];
+                popup_4f0a1ef0fc0b627f1203b8bc9547401f.setContent(html_c3e88f221958d4795a92992af5eb3c0e);
             
         
 
-        marker_d427dabb4815bf791524b72ae55ea91f.bindPopup(popup_3b461152292949cb94cab5a87f4fdc4e)
+        marker_73a3e569fcac28b49894146db919f4b2.bindPopup(popup_4f0a1ef0fc0b627f1203b8bc9547401f)
         ;
 
         
     
     
-            marker_d427dabb4815bf791524b72ae55ea91f.bindTooltip(
+            marker_73a3e569fcac28b49894146db919f4b2.bindTooltip(
                 `<div>
                      ALC Longvic / Chevigny
                  </div>`,
@@ -1864,17 +2128,17 @@
             );
         
     
-                marker_d427dabb4815bf791524b72ae55ea91f.setIcon(icon_380bcc17e20b01958df5069e2772f411);
+                marker_73a3e569fcac28b49894146db919f4b2.setIcon(icon_126fae68591c750b84fce6af2de532e6);
             
     
-            var marker_f773824e7e6419b32f30476bf86ce1a4 = L.marker(
+            var marker_aba730e87ecc2f96d17c56852feba919 = L.marker(
                 [43.674, 4.135],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_2861684294538ed54af2be31d39252d5 = L.AwesomeMarkers.icon(
+            var icon_853ec01a58cadadecf4ac67478668adb = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1885,24 +2149,24 @@
             );
         
     
-        var popup_6b6e98b225499589ee09d6274aa94b18 = L.popup({
+        var popup_537ed509ec417700f735e945c1c33584 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_48952152885021d3c0c1e0883055951e = $(`<div id="html_48952152885021d3c0c1e0883055951e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Academie HB Pour Elles</b><br>     Poule 14 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 1 | Perdus: 1<br>     Diff Buts: 67     </div>     </div>`)[0];
-                popup_6b6e98b225499589ee09d6274aa94b18.setContent(html_48952152885021d3c0c1e0883055951e);
+                var html_9223e424ab5c6f6c240dec3aa2c2d72e = $(`<div id="html_9223e424ab5c6f6c240dec3aa2c2d72e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Academie HB Pour Elles</b><br>     Poule 14 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 27 | Diff: 67<br>     G:8 N:1 P:1     </div>     </div>`)[0];
+                popup_537ed509ec417700f735e945c1c33584.setContent(html_9223e424ab5c6f6c240dec3aa2c2d72e);
             
         
 
-        marker_f773824e7e6419b32f30476bf86ce1a4.bindPopup(popup_6b6e98b225499589ee09d6274aa94b18)
+        marker_aba730e87ecc2f96d17c56852feba919.bindPopup(popup_537ed509ec417700f735e945c1c33584)
         ;
 
         
     
     
-            marker_f773824e7e6419b32f30476bf86ce1a4.bindTooltip(
+            marker_aba730e87ecc2f96d17c56852feba919.bindTooltip(
                 `<div>
                      Academie HB Pour Elles
                  </div>`,
@@ -1912,17 +2176,17 @@
             );
         
     
-                marker_f773824e7e6419b32f30476bf86ce1a4.setIcon(icon_2861684294538ed54af2be31d39252d5);
+                marker_aba730e87ecc2f96d17c56852feba919.setIcon(icon_853ec01a58cadadecf4ac67478668adb);
             
     
-            var marker_2dafbc01d48f253fa03c6d764d4ba0c8 = L.marker(
+            var marker_5a6f87b1e4a79e7e11de2137458b4ef5 = L.marker(
                 [43.8, 4.426],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_ab8d631267c59111e67836e908fe2cd8 = L.AwesomeMarkers.icon(
+            var icon_4e7b7a21f700ad253c3934434d4d9485 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1933,24 +2197,24 @@
             );
         
     
-        var popup_18bd1476465b1195599d9cea74be7f4a = L.popup({
+        var popup_0b0031dd4c59be7474de80328341e862 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fdce2e5b11e3e9f9f05dd5fe4f763371 = $(`<div id="html_fdce2e5b11e3e9f9f05dd5fe4f763371" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Bouillargues HB Nimes</b><br>     Poule 14 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 40     </div>     </div>`)[0];
-                popup_18bd1476465b1195599d9cea74be7f4a.setContent(html_fdce2e5b11e3e9f9f05dd5fe4f763371);
+                var html_027b58570f65c5b3c1cb83bc51a0d226 = $(`<div id="html_027b58570f65c5b3c1cb83bc51a0d226" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Bouillargues HB Nimes</b><br>     Poule 14 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 25 | Diff: 40<br>     G:7 N:1 P:2     </div>     </div>`)[0];
+                popup_0b0031dd4c59be7474de80328341e862.setContent(html_027b58570f65c5b3c1cb83bc51a0d226);
             
         
 
-        marker_2dafbc01d48f253fa03c6d764d4ba0c8.bindPopup(popup_18bd1476465b1195599d9cea74be7f4a)
+        marker_5a6f87b1e4a79e7e11de2137458b4ef5.bindPopup(popup_0b0031dd4c59be7474de80328341e862)
         ;
 
         
     
     
-            marker_2dafbc01d48f253fa03c6d764d4ba0c8.bindTooltip(
+            marker_5a6f87b1e4a79e7e11de2137458b4ef5.bindTooltip(
                 `<div>
                      Bouillargues HB Nimes
                  </div>`,
@@ -1960,17 +2224,17 @@
             );
         
     
-                marker_2dafbc01d48f253fa03c6d764d4ba0c8.setIcon(icon_ab8d631267c59111e67836e908fe2cd8);
+                marker_5a6f87b1e4a79e7e11de2137458b4ef5.setIcon(icon_4e7b7a21f700ad253c3934434d4d9485);
             
     
-            var marker_ca27cc970b8adce1c0e28f51368d70fd = L.marker(
+            var marker_9e1a7cf06042cc292ddd0e596ad72502 = L.marker(
                 [43.628, 3.432],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_f23d651b566db44605f3eb4f18d48c43 = L.AwesomeMarkers.icon(
+            var icon_1cb0ed091ead3a1152f32a5995dc43c6 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -1981,24 +2245,24 @@
             );
         
     
-        var popup_ce31caf406c2ec23bef0a5c2b2f66aca = L.popup({
+        var popup_75b92ae69506e87a4fd7fd48823695ab = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_025717466829fe36ba1e58ed4b6f6c6a = $(`<div id="html_025717466829fe36ba1e58ed4b6f6c6a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HBC Clermont Salagou</b><br>     Poule 14 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 2 | Perdus: 2<br>     Diff Buts: 21     </div>     </div>`)[0];
-                popup_ce31caf406c2ec23bef0a5c2b2f66aca.setContent(html_025717466829fe36ba1e58ed4b6f6c6a);
+                var html_da37e4474c2133a6a9c4688c4523b372 = $(`<div id="html_da37e4474c2133a6a9c4688c4523b372" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HBC Clermont Salagou</b><br>     Poule 14 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 21<br>     G:6 N:2 P:2     </div>     </div>`)[0];
+                popup_75b92ae69506e87a4fd7fd48823695ab.setContent(html_da37e4474c2133a6a9c4688c4523b372);
             
         
 
-        marker_ca27cc970b8adce1c0e28f51368d70fd.bindPopup(popup_ce31caf406c2ec23bef0a5c2b2f66aca)
+        marker_9e1a7cf06042cc292ddd0e596ad72502.bindPopup(popup_75b92ae69506e87a4fd7fd48823695ab)
         ;
 
         
     
     
-            marker_ca27cc970b8adce1c0e28f51368d70fd.bindTooltip(
+            marker_9e1a7cf06042cc292ddd0e596ad72502.bindTooltip(
                 `<div>
                      HBC Clermont Salagou
                  </div>`,
@@ -2008,17 +2272,17 @@
             );
         
     
-                marker_ca27cc970b8adce1c0e28f51368d70fd.setIcon(icon_f23d651b566db44605f3eb4f18d48c43);
+                marker_9e1a7cf06042cc292ddd0e596ad72502.setIcon(icon_1cb0ed091ead3a1152f32a5995dc43c6);
             
     
-            var marker_3d3b5b1ab2cd433f66b99ac580334886 = L.marker(
+            var marker_1fdbcdc99e0426199da5b0ea27df0d8d = L.marker(
                 [43.348, 5.461],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_da854e23954d80fc13a4af866879da67 = L.AwesomeMarkers.icon(
+            var icon_74df89a177cc7b1f09bc8150cf0aa5a7 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -2029,24 +2293,24 @@
             );
         
     
-        var popup_ab2a827a1f695182a7cb43ba68a671f1 = L.popup({
+        var popup_6cd8fd32c7f8c72942542ceb2d52c80a = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_817d6133918309ffd0b3d904c31fb950 = $(`<div id="html_817d6133918309ffd0b3d904c31fb950" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Handball Plan de Cuques</b><br>     Poule 15 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 1 | Perdus: 1<br>     Diff Buts: 125     </div>     </div>`)[0];
-                popup_ab2a827a1f695182a7cb43ba68a671f1.setContent(html_817d6133918309ffd0b3d904c31fb950);
+                var html_e3a92706fc72b1497f2f7ba7280ea3d1 = $(`<div id="html_e3a92706fc72b1497f2f7ba7280ea3d1" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Handball Plan de Cuques</b><br>     Poule 15 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 27 | Diff: 125<br>     G:8 N:1 P:1     </div>     </div>`)[0];
+                popup_6cd8fd32c7f8c72942542ceb2d52c80a.setContent(html_e3a92706fc72b1497f2f7ba7280ea3d1);
             
         
 
-        marker_3d3b5b1ab2cd433f66b99ac580334886.bindPopup(popup_ab2a827a1f695182a7cb43ba68a671f1)
+        marker_1fdbcdc99e0426199da5b0ea27df0d8d.bindPopup(popup_6cd8fd32c7f8c72942542ceb2d52c80a)
         ;
 
         
     
     
-            marker_3d3b5b1ab2cd433f66b99ac580334886.bindTooltip(
+            marker_1fdbcdc99e0426199da5b0ea27df0d8d.bindTooltip(
                 `<div>
                      Handball Plan de Cuques
                  </div>`,
@@ -2056,17 +2320,17 @@
             );
         
     
-                marker_3d3b5b1ab2cd433f66b99ac580334886.setIcon(icon_da854e23954d80fc13a4af866879da67);
+                marker_1fdbcdc99e0426199da5b0ea27df0d8d.setIcon(icon_74df89a177cc7b1f09bc8150cf0aa5a7);
             
     
-            var marker_7d20285108f510c0336b295cd8917baa = L.marker(
+            var marker_7196a1efef61347239b710462d3e2452 = L.marker(
                 [43.61, 3.876],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_6aaf04644d9604ffa85886484b94125d = L.AwesomeMarkers.icon(
+            var icon_df865b8cf75a22110bc0b2d9899f688d = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -2077,24 +2341,24 @@
             );
         
     
-        var popup_e49f9c9f753b70eca7733ea7fc5af8a7 = L.popup({
+        var popup_bc7455ce2848f6c627fae5b746151b38 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_84b24979129a621150953b31efe859e2 = $(`<div id="html_84b24979129a621150953b31efe859e2" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HB Feminin Montpellier</b><br>     Poule 15 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 2 | Perdus: 2<br>     Diff Buts: 56     </div>     </div>`)[0];
-                popup_e49f9c9f753b70eca7733ea7fc5af8a7.setContent(html_84b24979129a621150953b31efe859e2);
+                var html_e0dc252a095c258f9e85b93e3b36b78a = $(`<div id="html_e0dc252a095c258f9e85b93e3b36b78a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HB Feminin Montpellier</b><br>     Poule 15 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 56<br>     G:6 N:2 P:2     </div>     </div>`)[0];
+                popup_bc7455ce2848f6c627fae5b746151b38.setContent(html_e0dc252a095c258f9e85b93e3b36b78a);
             
         
 
-        marker_7d20285108f510c0336b295cd8917baa.bindPopup(popup_e49f9c9f753b70eca7733ea7fc5af8a7)
+        marker_7196a1efef61347239b710462d3e2452.bindPopup(popup_bc7455ce2848f6c627fae5b746151b38)
         ;
 
         
     
     
-            marker_7d20285108f510c0336b295cd8917baa.bindTooltip(
+            marker_7196a1efef61347239b710462d3e2452.bindTooltip(
                 `<div>
                      HB Feminin Montpellier
                  </div>`,
@@ -2104,17 +2368,17 @@
             );
         
     
-                marker_7d20285108f510c0336b295cd8917baa.setIcon(icon_6aaf04644d9604ffa85886484b94125d);
+                marker_7196a1efef61347239b710462d3e2452.setIcon(icon_df865b8cf75a22110bc0b2d9899f688d);
             
     
-            var marker_cbebe1cf05a27aefdaff4f5dea60aa41 = L.marker(
+            var marker_3a061b09ddd777329a2b573ce89823d5 = L.marker(
                 [43.836, 4.36],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_9d7bbfebdd727be46a971b699c164153 = L.AwesomeMarkers.icon(
+            var icon_63a48e3bfe6809faf24394aa88c3338d = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -2125,24 +2389,24 @@
             );
         
     
-        var popup_4e766d67bc7b4b8ed3e59b96f7cdeee6 = L.popup({
+        var popup_e81a14e0b1d101fa2709cfc3298d3287 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_9e2a316c5fc1689527c944ea3440c535 = $(`<div id="html_9e2a316c5fc1689527c944ea3440c535" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>USAM Nimes Gard</b><br>     Poule 16 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 36     </div>     </div>`)[0];
-                popup_4e766d67bc7b4b8ed3e59b96f7cdeee6.setContent(html_9e2a316c5fc1689527c944ea3440c535);
+                var html_b9f82c6332c1eccf135b23f369d8fcd3 = $(`<div id="html_b9f82c6332c1eccf135b23f369d8fcd3" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>USAM Nimes Gard</b><br>     Poule 16 - 1er Poule<br>     <hr style='margin:5px 0;'>     Pts: 24 | Diff: 36<br>     G:7 N:0 P:3     </div>     </div>`)[0];
+                popup_e81a14e0b1d101fa2709cfc3298d3287.setContent(html_b9f82c6332c1eccf135b23f369d8fcd3);
             
         
 
-        marker_cbebe1cf05a27aefdaff4f5dea60aa41.bindPopup(popup_4e766d67bc7b4b8ed3e59b96f7cdeee6)
+        marker_3a061b09ddd777329a2b573ce89823d5.bindPopup(popup_e81a14e0b1d101fa2709cfc3298d3287)
         ;
 
         
     
     
-            marker_cbebe1cf05a27aefdaff4f5dea60aa41.bindTooltip(
+            marker_3a061b09ddd777329a2b573ce89823d5.bindTooltip(
                 `<div>
                      USAM Nimes Gard
                  </div>`,
@@ -2152,17 +2416,17 @@
             );
         
     
-                marker_cbebe1cf05a27aefdaff4f5dea60aa41.setIcon(icon_9d7bbfebdd727be46a971b699c164153);
+                marker_3a061b09ddd777329a2b573ce89823d5.setIcon(icon_63a48e3bfe6809faf24394aa88c3338d);
             
     
-            var marker_96f37ceb031c45d94280e922be79e637 = L.marker(
+            var marker_96690b9ba0588957a5d9ed486d35e70c = L.marker(
                 [43.66, 6.926],
                 {
 }
-            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+            ).addTo(map_5a2dde0c666e3a0bc4e53a75eef6635c);
         
     
-            var icon_b8b158d9d01cbc55a12e947bf52588e5 = L.AwesomeMarkers.icon(
+            var icon_bbeb2200185e8245aa9859a9bbb88ad1 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -2173,24 +2437,24 @@
             );
         
     
-        var popup_9c40b937ad9b01774e36738c8643a139 = L.popup({
+        var popup_e156226c4aab02cc5976dcfd6d7016eb = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_0306e5666e50bb6aaaf7620cf3e48df3 = $(`<div id="html_0306e5666e50bb6aaaf7620cf3e48df3" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pays de Grasse HB</b><br>     Poule 16 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 1 | Perdus: 3<br>     Diff Buts: 9     </div>     </div>`)[0];
-                popup_9c40b937ad9b01774e36738c8643a139.setContent(html_0306e5666e50bb6aaaf7620cf3e48df3);
+                var html_d96518a82236d7c13ce1ac5c1aa0f17b = $(`<div id="html_d96518a82236d7c13ce1ac5c1aa0f17b" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pays de Grasse HB</b><br>     Poule 16 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Pts: 23 | Diff: 9<br>     G:6 N:1 P:3     </div>     </div>`)[0];
+                popup_e156226c4aab02cc5976dcfd6d7016eb.setContent(html_d96518a82236d7c13ce1ac5c1aa0f17b);
             
         
 
-        marker_96f37ceb031c45d94280e922be79e637.bindPopup(popup_9c40b937ad9b01774e36738c8643a139)
+        marker_96690b9ba0588957a5d9ed486d35e70c.bindPopup(popup_e156226c4aab02cc5976dcfd6d7016eb)
         ;
 
         
     
     
-            marker_96f37ceb031c45d94280e922be79e637.bindTooltip(
+            marker_96690b9ba0588957a5d9ed486d35e70c.bindTooltip(
                 `<div>
                      Pays de Grasse HB
                  </div>`,
@@ -2200,7 +2464,7 @@
             );
         
     
-                marker_96f37ceb031c45d94280e922be79e637.setIcon(icon_b8b158d9d01cbc55a12e947bf52588e5);
+                marker_96690b9ba0588957a5d9ed486d35e70c.setIcon(icon_bbeb2200185e8245aa9859a9bbb88ad1);
             
 </script>
 </html>
