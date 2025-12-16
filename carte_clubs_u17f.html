@@ -1,0 +1,2206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c20d1b94b97afea6fa5ea1c745cd162 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div id="bouton_stats" style="position: fixed; top: 10px; right: 10px; z-index: 9999;">
+    <button onclick="document.getElementById('tableau_modal').style.display='block'" 
+            style="background-color: #0078A8; color: white; border: none; padding: 10px 20px; 
+                   font-size: 16px; cursor: pointer; border-radius: 5px; box-shadow: 2px 2px 5px grey;">
+        📊 Voir Classement & Stats
+    </button>
+</div>
+
+<div id="tableau_modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+                               background-color: rgba(0,0,0,0.7); z-index: 10000; overflow: auto;">
+    <div style="background-color: white; margin: 5% auto; padding: 20px; border: 1px solid #888; 
+                width: 80%; max-width: 800px; border-radius: 8px; position: relative;">
+        
+        <span onclick="document.getElementById('tableau_modal').style.display='none'" 
+              style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+        
+        <h2 style="text-align:center; font-family:Arial;">Statistiques des Équipes Qualifiées</h2>
+        
+        <table style="width:100%; border-collapse: collapse; font-family:Arial; font-size:14px;">
+            <thead>
+                <tr style="background-color: #333; color: white;">
+                    <th style="padding: 10px; text-align:left;">Poule</th>
+                    <th style="padding: 10px; text-align:left;">Club</th>
+                    <th style="padding: 10px;">G</th>
+                    <th style="padding: 10px;">N</th>
+                    <th style="padding: 10px;">P</th>
+                    <th style="padding: 10px;">Diff</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+    <tr style="background-color:#d4edda;">
+        <td>1</td>
+        <td>Bearn Feminin HB</td>
+        <td style="text-align:center;">10</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">115</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>1</td>
+        <td>Pau Nousty Sports</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">42</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>2</td>
+        <td>Merignac Gironde HB</td>
+        <td style="text-align:center;">9</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">137</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>2</td>
+        <td>Tournefeuille Handball</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">63</td>
+    </tr>
+    
+    <tr style="background-color:#fff3cd;">
+        <td>2</td>
+        <td>Pechbonnieu Coteaux HB</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">40</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>3</td>
+        <td>Perigueux Handball</td>
+        <td style="text-align:center;">10</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">137</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>3</td>
+        <td>Saint-Flour Handball</td>
+        <td style="text-align:center;">6</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">33</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>4</td>
+        <td>St Nazaire Handball</td>
+        <td style="text-align:center;">10</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">139</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>4</td>
+        <td>La Roche sur Yon</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">54</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>5</td>
+        <td>St Sebastien Sud Loire</td>
+        <td style="text-align:center;">9</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">90</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>5</td>
+        <td>Nantes Loire Feminin</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">65</td>
+    </tr>
+    
+    <tr style="background-color:#fff3cd;">
+        <td>5</td>
+        <td>Entente Cornouaille</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">78</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>6</td>
+        <td>Feline HB Academie</td>
+        <td style="text-align:center;">9</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">60</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>6</td>
+        <td>HB Feminin Caen Est</td>
+        <td style="text-align:center;">6</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">4</td>
+        <td style="text-align:center;">50</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>7</td>
+        <td>Stella Saint-Maur HB</td>
+        <td style="text-align:center;">8</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">113</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>7</td>
+        <td>Entente Sud 93</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">108</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>8</td>
+        <td>Entente Elite 77</td>
+        <td style="text-align:center;">10</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">111</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>8</td>
+        <td>Yvelines HB</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">26</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>9</td>
+        <td>Issy-Paris Hand</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">91</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>9</td>
+        <td>Sambre Avesnois HB</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">84</td>
+    </tr>
+    
+    <tr style="background-color:#fff3cd;">
+        <td>9</td>
+        <td>Lille Metropole HB</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">63</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>10</td>
+        <td>Metz Handball</td>
+        <td style="text-align:center;">9</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">72</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>10</td>
+        <td>Entente Yutz HB</td>
+        <td style="text-align:center;">6</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">4</td>
+        <td style="text-align:center;">29</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>11</td>
+        <td>Entente Saone Mamirolle</td>
+        <td style="text-align:center;">8</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">64</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>11</td>
+        <td>Strasbourg Achenheim</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">71</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>12</td>
+        <td>Palente Besancon HB</td>
+        <td style="text-align:center;">10</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">124</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>12</td>
+        <td>JDA Dijon HB</td>
+        <td style="text-align:center;">8</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">93</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>13</td>
+        <td>Lyon Metropole HB</td>
+        <td style="text-align:center;">8</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">85</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>13</td>
+        <td>ALC Longvic / Chevigny</td>
+        <td style="text-align:center;">8</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">32</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>14</td>
+        <td>Academie HB Pour Elles</td>
+        <td style="text-align:center;">8</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">67</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>14</td>
+        <td>Bouillargues HB Nimes</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">40</td>
+    </tr>
+    
+    <tr style="background-color:#fff3cd;">
+        <td>14</td>
+        <td>HBC Clermont Salagou</td>
+        <td style="text-align:center;">6</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">21</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>15</td>
+        <td>Handball Plan de Cuques</td>
+        <td style="text-align:center;">8</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">125</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>15</td>
+        <td>HB Feminin Montpellier</td>
+        <td style="text-align:center;">6</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">56</td>
+    </tr>
+    
+    <tr style="background-color:#d4edda;">
+        <td>16</td>
+        <td>USAM Nimes Gard</td>
+        <td style="text-align:center;">7</td>
+        <td style="text-align:center;">0</td>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">36</td>
+    </tr>
+    
+    <tr style="background-color:#cce5ff;">
+        <td>16</td>
+        <td>Pays de Grasse HB</td>
+        <td style="text-align:center;">6</td>
+        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">3</td>
+        <td style="text-align:center;">9</td>
+    </tr>
+    
+            </tbody>
+        </table>
+        <br>
+        <div style="text-align:center; font-size:12px; color:grey;">
+            <span style="background-color:#d4edda; border:1px solid #ccc; padding:2px;">&nbsp;&nbsp;</span> 1ers
+            <span style="background-color:#cce5ff; border:1px solid #ccc; padding:2px;">&nbsp;&nbsp;</span> 2èmes
+            <span style="background-color:#fff3cd; border:1px solid #ccc; padding:2px;">&nbsp;&nbsp;</span> Meilleurs 3èmes
+        </div>
+    </div>
+</div>
+    
+     <div style="position: fixed; 
+     bottom: 50px; left: 50px; width: 180px; height: 110px; 
+     border:2px solid grey; z-index:9999; font-size:14px;
+     background-color:white; opacity: 0.9; padding: 10px;">
+     <b>Légende Carte</b><br>
+     <i class="fa fa-star" style="color:green"></i> 1er de Poule<br>
+     <i class="fa fa-user" style="color:blue"></i> 2ème de Poule<br>
+     <i class="fa fa-plus" style="color:orange"></i> Meilleur 3ème
+      </div>
+     
+    
+            <div class="folium-map" id="map_6c20d1b94b97afea6fa5ea1c745cd162" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c20d1b94b97afea6fa5ea1c745cd162 = L.map(
+                "map_6c20d1b94b97afea6fa5ea1c745cd162",
+                {
+                    center: [46.603354, 1.888334],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8dad606bc30b18beec1a85fe8fd3bbb2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8dad606bc30b18beec1a85fe8fd3bbb2.addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var marker_dbb989a505e7ea47c7dedd5032b9cdbd = L.marker(
+                [43.238, -0.279],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_b3dc15b0087be3d8cb8699fb93340447 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36b2bf5968a96eeb8cc30407e42bac70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b958e76888796a5a4fcd321c87d80895 = $(`<div id="html_b958e76888796a5a4fcd321c87d80895" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Bearn Feminin HB</b><br>     Poule 1 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 115     </div>     </div>`)[0];
+                popup_36b2bf5968a96eeb8cc30407e42bac70.setContent(html_b958e76888796a5a4fcd321c87d80895);
+            
+        
+
+        marker_dbb989a505e7ea47c7dedd5032b9cdbd.bindPopup(popup_36b2bf5968a96eeb8cc30407e42bac70)
+        ;
+
+        
+    
+    
+            marker_dbb989a505e7ea47c7dedd5032b9cdbd.bindTooltip(
+                `<div>
+                     Bearn Feminin HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dbb989a505e7ea47c7dedd5032b9cdbd.setIcon(icon_b3dc15b0087be3d8cb8699fb93340447);
+            
+    
+            var marker_51b001c8eab86794f8bc927cfa88b64e = L.marker(
+                [43.266, -0.216],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_bf0ebc5bee6be927db1dbe6c78af54f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6aca3b4c4ec48a753bc2c6ac48bf7f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce84a0612e2749029579c80ba5fd8394 = $(`<div id="html_ce84a0612e2749029579c80ba5fd8394" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pau Nousty Sports</b><br>     Poule 1 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 42     </div>     </div>`)[0];
+                popup_e6aca3b4c4ec48a753bc2c6ac48bf7f2.setContent(html_ce84a0612e2749029579c80ba5fd8394);
+            
+        
+
+        marker_51b001c8eab86794f8bc927cfa88b64e.bindPopup(popup_e6aca3b4c4ec48a753bc2c6ac48bf7f2)
+        ;
+
+        
+    
+    
+            marker_51b001c8eab86794f8bc927cfa88b64e.bindTooltip(
+                `<div>
+                     Pau Nousty Sports
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51b001c8eab86794f8bc927cfa88b64e.setIcon(icon_bf0ebc5bee6be927db1dbe6c78af54f0);
+            
+    
+            var marker_461a57e3dd30463eeae076fba2698dcd = L.marker(
+                [44.837, -0.644],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_1e3c4239f85b119d3757f29c3e43688b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7323a36f7f801a621865471350e02dab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ed9d192fa1b11872c84d52d7d2aba42 = $(`<div id="html_5ed9d192fa1b11872c84d52d7d2aba42" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Merignac Gironde HB</b><br>     Poule 2 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 9 | Nuls: 0 | Perdus: 1<br>     Diff Buts: 137     </div>     </div>`)[0];
+                popup_7323a36f7f801a621865471350e02dab.setContent(html_5ed9d192fa1b11872c84d52d7d2aba42);
+            
+        
+
+        marker_461a57e3dd30463eeae076fba2698dcd.bindPopup(popup_7323a36f7f801a621865471350e02dab)
+        ;
+
+        
+    
+    
+            marker_461a57e3dd30463eeae076fba2698dcd.bindTooltip(
+                `<div>
+                     Merignac Gironde HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_461a57e3dd30463eeae076fba2698dcd.setIcon(icon_1e3c4239f85b119d3757f29c3e43688b);
+            
+    
+            var marker_086e192b21f8578913a677aa2b2d8dca = L.marker(
+                [43.585, 1.344],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_ca908a73aa13d945fa4449ff51f1cc37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24a5fe46ffd971fcec21a1e12639dcf4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd18eb2caf6725dd6170889712b0b5c1 = $(`<div id="html_cd18eb2caf6725dd6170889712b0b5c1" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Tournefeuille Handball</b><br>     Poule 2 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 63     </div>     </div>`)[0];
+                popup_24a5fe46ffd971fcec21a1e12639dcf4.setContent(html_cd18eb2caf6725dd6170889712b0b5c1);
+            
+        
+
+        marker_086e192b21f8578913a677aa2b2d8dca.bindPopup(popup_24a5fe46ffd971fcec21a1e12639dcf4)
+        ;
+
+        
+    
+    
+            marker_086e192b21f8578913a677aa2b2d8dca.bindTooltip(
+                `<div>
+                     Tournefeuille Handball
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_086e192b21f8578913a677aa2b2d8dca.setIcon(icon_ca908a73aa13d945fa4449ff51f1cc37);
+            
+    
+            var marker_f980f7ff4e545e425df8702b443c21d1 = L.marker(
+                [43.7, 1.467],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_86813e4f1278a9ab3737c67e85ce5f60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33b11750d2f340373c72558e3ee5bbc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2da41f6fdc55ec0d07484af577742541 = $(`<div id="html_2da41f6fdc55ec0d07484af577742541" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pechbonnieu Coteaux HB</b><br>     Poule 2 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 40     </div>     </div>`)[0];
+                popup_33b11750d2f340373c72558e3ee5bbc9.setContent(html_2da41f6fdc55ec0d07484af577742541);
+            
+        
+
+        marker_f980f7ff4e545e425df8702b443c21d1.bindPopup(popup_33b11750d2f340373c72558e3ee5bbc9)
+        ;
+
+        
+    
+    
+            marker_f980f7ff4e545e425df8702b443c21d1.bindTooltip(
+                `<div>
+                     Pechbonnieu Coteaux HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f980f7ff4e545e425df8702b443c21d1.setIcon(icon_86813e4f1278a9ab3737c67e85ce5f60);
+            
+    
+            var marker_dc9e0cf48a73a4285043223a38fef756 = L.marker(
+                [45.184, 0.721],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_e93180fcbfb00c51a5deb3ca05d34853 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ed1e7cde1b86fb1eedaa9d27f923c8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79b45a7664e1400b1f9e9c16e1c0795a = $(`<div id="html_79b45a7664e1400b1f9e9c16e1c0795a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Perigueux Handball</b><br>     Poule 3 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 137     </div>     </div>`)[0];
+                popup_4ed1e7cde1b86fb1eedaa9d27f923c8d.setContent(html_79b45a7664e1400b1f9e9c16e1c0795a);
+            
+        
+
+        marker_dc9e0cf48a73a4285043223a38fef756.bindPopup(popup_4ed1e7cde1b86fb1eedaa9d27f923c8d)
+        ;
+
+        
+    
+    
+            marker_dc9e0cf48a73a4285043223a38fef756.bindTooltip(
+                `<div>
+                     Perigueux Handball
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc9e0cf48a73a4285043223a38fef756.setIcon(icon_e93180fcbfb00c51a5deb3ca05d34853);
+            
+    
+            var marker_de09bc6e87ce31096623befae982bf85 = L.marker(
+                [45.034, 3.093],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_087213a79340c334cf8c7d9fa97607f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b0c444fe1c1a063883c488200a19a5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9670868c61f6ed7c19d17b46b4c4686c = $(`<div id="html_9670868c61f6ed7c19d17b46b4c4686c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Saint-Flour Handball</b><br>     Poule 3 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 2 | Perdus: 2<br>     Diff Buts: 33     </div>     </div>`)[0];
+                popup_0b0c444fe1c1a063883c488200a19a5d.setContent(html_9670868c61f6ed7c19d17b46b4c4686c);
+            
+        
+
+        marker_de09bc6e87ce31096623befae982bf85.bindPopup(popup_0b0c444fe1c1a063883c488200a19a5d)
+        ;
+
+        
+    
+    
+            marker_de09bc6e87ce31096623befae982bf85.bindTooltip(
+                `<div>
+                     Saint-Flour Handball
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de09bc6e87ce31096623befae982bf85.setIcon(icon_087213a79340c334cf8c7d9fa97607f5);
+            
+    
+            var marker_ff7b40cb135d0fdb8606832e4fb0e4f4 = L.marker(
+                [47.273, -2.213],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_581c163635ed29cb49f86b6118171dc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e1394094c6640a93b45d70205d189a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac9770f6e5eebc8ce67c96a07fcd9b05 = $(`<div id="html_ac9770f6e5eebc8ce67c96a07fcd9b05" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>St Nazaire Handball</b><br>     Poule 4 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 139     </div>     </div>`)[0];
+                popup_1e1394094c6640a93b45d70205d189a3.setContent(html_ac9770f6e5eebc8ce67c96a07fcd9b05);
+            
+        
+
+        marker_ff7b40cb135d0fdb8606832e4fb0e4f4.bindPopup(popup_1e1394094c6640a93b45d70205d189a3)
+        ;
+
+        
+    
+    
+            marker_ff7b40cb135d0fdb8606832e4fb0e4f4.bindTooltip(
+                `<div>
+                     St Nazaire Handball
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff7b40cb135d0fdb8606832e4fb0e4f4.setIcon(icon_581c163635ed29cb49f86b6118171dc6);
+            
+    
+            var marker_25db70a6780789055760f08dede26e02 = L.marker(
+                [46.67, -1.426],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_4ceb2d28bf7150e06b386ca97d394fad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f0604450c8b4a588fe620c8744bcb93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95cee6ed0db42078b6f7b3b43673c967 = $(`<div id="html_95cee6ed0db42078b6f7b3b43673c967" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>La Roche sur Yon</b><br>     Poule 4 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 54     </div>     </div>`)[0];
+                popup_3f0604450c8b4a588fe620c8744bcb93.setContent(html_95cee6ed0db42078b6f7b3b43673c967);
+            
+        
+
+        marker_25db70a6780789055760f08dede26e02.bindPopup(popup_3f0604450c8b4a588fe620c8744bcb93)
+        ;
+
+        
+    
+    
+            marker_25db70a6780789055760f08dede26e02.bindTooltip(
+                `<div>
+                     La Roche sur Yon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25db70a6780789055760f08dede26e02.setIcon(icon_4ceb2d28bf7150e06b386ca97d394fad);
+            
+    
+            var marker_9246d9d349b9cafa8f0ac13b07544c6d = L.marker(
+                [47.205, -1.503],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_d672236091674b1d2c5fafbf25fd9ef0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48f908f8ae2b0cad70ddbeb2b50f1ba1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec80fc62e097692399e1579e534cc48f = $(`<div id="html_ec80fc62e097692399e1579e534cc48f" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>St Sebastien Sud Loire</b><br>     Poule 5 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 9 | Nuls: 1 | Perdus: 0<br>     Diff Buts: 90     </div>     </div>`)[0];
+                popup_48f908f8ae2b0cad70ddbeb2b50f1ba1.setContent(html_ec80fc62e097692399e1579e534cc48f);
+            
+        
+
+        marker_9246d9d349b9cafa8f0ac13b07544c6d.bindPopup(popup_48f908f8ae2b0cad70ddbeb2b50f1ba1)
+        ;
+
+        
+    
+    
+            marker_9246d9d349b9cafa8f0ac13b07544c6d.bindTooltip(
+                `<div>
+                     St Sebastien Sud Loire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9246d9d349b9cafa8f0ac13b07544c6d.setIcon(icon_d672236091674b1d2c5fafbf25fd9ef0);
+            
+    
+            var marker_cdfda3f26bece2ed09efe30286b00194 = L.marker(
+                [47.218, -1.553],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_f9b84afa13b93da796c5eeac95189b27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76e2828d547ed7efece038ea9f4b13ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e6b41869ea2d921b57d9c524e90ef3a = $(`<div id="html_9e6b41869ea2d921b57d9c524e90ef3a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Nantes Loire Feminin</b><br>     Poule 5 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 65     </div>     </div>`)[0];
+                popup_76e2828d547ed7efece038ea9f4b13ca.setContent(html_9e6b41869ea2d921b57d9c524e90ef3a);
+            
+        
+
+        marker_cdfda3f26bece2ed09efe30286b00194.bindPopup(popup_76e2828d547ed7efece038ea9f4b13ca)
+        ;
+
+        
+    
+    
+            marker_cdfda3f26bece2ed09efe30286b00194.bindTooltip(
+                `<div>
+                     Nantes Loire Feminin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdfda3f26bece2ed09efe30286b00194.setIcon(icon_f9b84afa13b93da796c5eeac95189b27);
+            
+    
+            var marker_c1aa43d9774350f98123eb3bc357d1ff = L.marker(
+                [47.873, -3.921],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_4651feb6f0606046fbb7517cf11df8af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cec11d06b95c32a05e0c90077ac7a97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e661d1b24c67c65f0f59c76291685ab7 = $(`<div id="html_e661d1b24c67c65f0f59c76291685ab7" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Cornouaille</b><br>     Poule 5 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 78     </div>     </div>`)[0];
+                popup_5cec11d06b95c32a05e0c90077ac7a97.setContent(html_e661d1b24c67c65f0f59c76291685ab7);
+            
+        
+
+        marker_c1aa43d9774350f98123eb3bc357d1ff.bindPopup(popup_5cec11d06b95c32a05e0c90077ac7a97)
+        ;
+
+        
+    
+    
+            marker_c1aa43d9774350f98123eb3bc357d1ff.bindTooltip(
+                `<div>
+                     Entente Cornouaille
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1aa43d9774350f98123eb3bc357d1ff.setIcon(icon_4651feb6f0606046fbb7517cf11df8af);
+            
+    
+            var marker_dbd952fa2f5d5a00f11d52b03cddebe1 = L.marker(
+                [47.902, 1.909],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_50f62abbdcb56b40ceddeb5a4b8ba841 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3883e5566dd0ef10c75705d60cb02890 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d424bb6f679f9e33057eb31360b8119 = $(`<div id="html_0d424bb6f679f9e33057eb31360b8119" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Feline HB Academie</b><br>     Poule 6 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 9 | Nuls: 0 | Perdus: 1<br>     Diff Buts: 60     </div>     </div>`)[0];
+                popup_3883e5566dd0ef10c75705d60cb02890.setContent(html_0d424bb6f679f9e33057eb31360b8119);
+            
+        
+
+        marker_dbd952fa2f5d5a00f11d52b03cddebe1.bindPopup(popup_3883e5566dd0ef10c75705d60cb02890)
+        ;
+
+        
+    
+    
+            marker_dbd952fa2f5d5a00f11d52b03cddebe1.bindTooltip(
+                `<div>
+                     Feline HB Academie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dbd952fa2f5d5a00f11d52b03cddebe1.setIcon(icon_50f62abbdcb56b40ceddeb5a4b8ba841);
+            
+    
+            var marker_020323b1bce405a21cbdfba78702005b = L.marker(
+                [49.182, -0.37],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_1c5b974e41b0c15db3061c4430dba60a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31388d367522a6ae8a3022fd8fbaaf11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1ab612f693846e6a3b6d868d662a059 = $(`<div id="html_e1ab612f693846e6a3b6d868d662a059" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HB Feminin Caen Est</b><br>     Poule 6 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 0 | Perdus: 4<br>     Diff Buts: 50     </div>     </div>`)[0];
+                popup_31388d367522a6ae8a3022fd8fbaaf11.setContent(html_e1ab612f693846e6a3b6d868d662a059);
+            
+        
+
+        marker_020323b1bce405a21cbdfba78702005b.bindPopup(popup_31388d367522a6ae8a3022fd8fbaaf11)
+        ;
+
+        
+    
+    
+            marker_020323b1bce405a21cbdfba78702005b.bindTooltip(
+                `<div>
+                     HB Feminin Caen Est
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_020323b1bce405a21cbdfba78702005b.setIcon(icon_1c5b974e41b0c15db3061c4430dba60a);
+            
+    
+            var marker_676a093b5c1412267575fc2555702990 = L.marker(
+                [48.802, 2.485],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_716cc023dac54d0890ecd93da4a1c1ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f53a7430b166f3e43923c23788bde494 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92c43611331fae21d74d049db2a76736 = $(`<div id="html_92c43611331fae21d74d049db2a76736" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Stella Saint-Maur HB</b><br>     Poule 7 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 0 | Perdus: 2<br>     Diff Buts: 113     </div>     </div>`)[0];
+                popup_f53a7430b166f3e43923c23788bde494.setContent(html_92c43611331fae21d74d049db2a76736);
+            
+        
+
+        marker_676a093b5c1412267575fc2555702990.bindPopup(popup_f53a7430b166f3e43923c23788bde494)
+        ;
+
+        
+    
+    
+            marker_676a093b5c1412267575fc2555702990.bindTooltip(
+                `<div>
+                     Stella Saint-Maur HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_676a093b5c1412267575fc2555702990.setIcon(icon_716cc023dac54d0890ecd93da4a1c1ac);
+            
+    
+            var marker_4f1b5c7770c005c773ceba3f0e608df0 = L.marker(
+                [48.864, 2.443],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_e024827b678dcc7918eb87e0f88308f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c30f42a51bddb5030b29a328805b00ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_317bdf75d25ef7b4f232a01308e8a9aa = $(`<div id="html_317bdf75d25ef7b4f232a01308e8a9aa" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Sud 93</b><br>     Poule 7 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 108     </div>     </div>`)[0];
+                popup_c30f42a51bddb5030b29a328805b00ee.setContent(html_317bdf75d25ef7b4f232a01308e8a9aa);
+            
+        
+
+        marker_4f1b5c7770c005c773ceba3f0e608df0.bindPopup(popup_c30f42a51bddb5030b29a328805b00ee)
+        ;
+
+        
+    
+    
+            marker_4f1b5c7770c005c773ceba3f0e608df0.bindTooltip(
+                `<div>
+                     Entente Sud 93
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f1b5c7770c005c773ceba3f0e608df0.setIcon(icon_e024827b678dcc7918eb87e0f88308f0);
+            
+    
+            var marker_0711f1172bc60290dc56fe94e6fc99cd = L.marker(
+                [48.854, 2.624],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_3f4e28c817055295d06c74aed321ef7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_052af5619c31ffdb4fdbdeba878cd16e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4dc27985cd9e115235aa6a1c9c578864 = $(`<div id="html_4dc27985cd9e115235aa6a1c9c578864" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Elite 77</b><br>     Poule 8 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 111     </div>     </div>`)[0];
+                popup_052af5619c31ffdb4fdbdeba878cd16e.setContent(html_4dc27985cd9e115235aa6a1c9c578864);
+            
+        
+
+        marker_0711f1172bc60290dc56fe94e6fc99cd.bindPopup(popup_052af5619c31ffdb4fdbdeba878cd16e)
+        ;
+
+        
+    
+    
+            marker_0711f1172bc60290dc56fe94e6fc99cd.bindTooltip(
+                `<div>
+                     Entente Elite 77
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0711f1172bc60290dc56fe94e6fc99cd.setIcon(icon_3f4e28c817055295d06c74aed321ef7c);
+            
+    
+            var marker_a4bd74a98ce46aa008ed175de6d6c82c = L.marker(
+                [48.771, 2.03],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_0d60b951406cb5b8b45ef3cbc9733428 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1956c2d9ba9368bff07819500ba24346 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1fcb23d2c7dfadaaf38578191d46368 = $(`<div id="html_f1fcb23d2c7dfadaaf38578191d46368" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Yvelines HB</b><br>     Poule 8 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 26     </div>     </div>`)[0];
+                popup_1956c2d9ba9368bff07819500ba24346.setContent(html_f1fcb23d2c7dfadaaf38578191d46368);
+            
+        
+
+        marker_a4bd74a98ce46aa008ed175de6d6c82c.bindPopup(popup_1956c2d9ba9368bff07819500ba24346)
+        ;
+
+        
+    
+    
+            marker_a4bd74a98ce46aa008ed175de6d6c82c.bindTooltip(
+                `<div>
+                     Yvelines HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4bd74a98ce46aa008ed175de6d6c82c.setIcon(icon_0d60b951406cb5b8b45ef3cbc9733428);
+            
+    
+            var marker_f1becc6c967d5a6812539f2c85bca5f5 = L.marker(
+                [48.824, 2.274],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_bc1cf2cd08a80d12640521c25414dc5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f964d04fd1fdd17d40484676295d617 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78d2276acb0cd6e4e03eec10a3b65042 = $(`<div id="html_78d2276acb0cd6e4e03eec10a3b65042" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Issy-Paris Hand</b><br>     Poule 9 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 2 | Perdus: 1<br>     Diff Buts: 91     </div>     </div>`)[0];
+                popup_3f964d04fd1fdd17d40484676295d617.setContent(html_78d2276acb0cd6e4e03eec10a3b65042);
+            
+        
+
+        marker_f1becc6c967d5a6812539f2c85bca5f5.bindPopup(popup_3f964d04fd1fdd17d40484676295d617)
+        ;
+
+        
+    
+    
+            marker_f1becc6c967d5a6812539f2c85bca5f5.bindTooltip(
+                `<div>
+                     Issy-Paris Hand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f1becc6c967d5a6812539f2c85bca5f5.setIcon(icon_bc1cf2cd08a80d12640521c25414dc5e);
+            
+    
+            var marker_b5fb3715f186dba76f1430f0f5686fa5 = L.marker(
+                [50.203, 3.803],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_011e065a8b890121956fa05b2f604711 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb363cd6972a3590cb79fe32b996b1e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b88869461ab71042658cac20133f614 = $(`<div id="html_7b88869461ab71042658cac20133f614" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Sambre Avesnois HB</b><br>     Poule 9 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 2 | Perdus: 1<br>     Diff Buts: 84     </div>     </div>`)[0];
+                popup_eb363cd6972a3590cb79fe32b996b1e8.setContent(html_7b88869461ab71042658cac20133f614);
+            
+        
+
+        marker_b5fb3715f186dba76f1430f0f5686fa5.bindPopup(popup_eb363cd6972a3590cb79fe32b996b1e8)
+        ;
+
+        
+    
+    
+            marker_b5fb3715f186dba76f1430f0f5686fa5.bindTooltip(
+                `<div>
+                     Sambre Avesnois HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b5fb3715f186dba76f1430f0f5686fa5.setIcon(icon_011e065a8b890121956fa05b2f604711);
+            
+    
+            var marker_d627fef9a166e2b7656c3183635cbecf = L.marker(
+                [50.637, 3.013],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_fa39a3851c6a921dc0c2df5317da28f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb61a05566c3ac81a9ab2548d1a76b82 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_581c5e8dc023dcc02f17c34b1dc8c614 = $(`<div id="html_581c5e8dc023dcc02f17c34b1dc8c614" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Lille Metropole HB</b><br>     Poule 9 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 63     </div>     </div>`)[0];
+                popup_cb61a05566c3ac81a9ab2548d1a76b82.setContent(html_581c5e8dc023dcc02f17c34b1dc8c614);
+            
+        
+
+        marker_d627fef9a166e2b7656c3183635cbecf.bindPopup(popup_cb61a05566c3ac81a9ab2548d1a76b82)
+        ;
+
+        
+    
+    
+            marker_d627fef9a166e2b7656c3183635cbecf.bindTooltip(
+                `<div>
+                     Lille Metropole HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d627fef9a166e2b7656c3183635cbecf.setIcon(icon_fa39a3851c6a921dc0c2df5317da28f1);
+            
+    
+            var marker_c0fa9edcbae00c0fb98da9964756ee59 = L.marker(
+                [49.119, 6.175],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_1b1333abd1bc7729ed3515a3f6df1d4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd69e5f038a2aea88f6598654b48aab0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c5a9b3888dd058a454ee57a3a42c52d = $(`<div id="html_6c5a9b3888dd058a454ee57a3a42c52d" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Metz Handball</b><br>     Poule 10 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 9 | Nuls: 0 | Perdus: 1<br>     Diff Buts: 72     </div>     </div>`)[0];
+                popup_fd69e5f038a2aea88f6598654b48aab0.setContent(html_6c5a9b3888dd058a454ee57a3a42c52d);
+            
+        
+
+        marker_c0fa9edcbae00c0fb98da9964756ee59.bindPopup(popup_fd69e5f038a2aea88f6598654b48aab0)
+        ;
+
+        
+    
+    
+            marker_c0fa9edcbae00c0fb98da9964756ee59.bindTooltip(
+                `<div>
+                     Metz Handball
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0fa9edcbae00c0fb98da9964756ee59.setIcon(icon_1b1333abd1bc7729ed3515a3f6df1d4f);
+            
+    
+            var marker_bd3b0510b32753736d4d694068f210a1 = L.marker(
+                [49.356, 6.191],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_7a86cad0620f822ff30c9be3bc72276e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_804e65e2a9ea683b23637916a68c3a3c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04459df1f30df65d05e820ab1262b9e5 = $(`<div id="html_04459df1f30df65d05e820ab1262b9e5" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Yutz HB</b><br>     Poule 10 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 0 | Perdus: 4<br>     Diff Buts: 29     </div>     </div>`)[0];
+                popup_804e65e2a9ea683b23637916a68c3a3c.setContent(html_04459df1f30df65d05e820ab1262b9e5);
+            
+        
+
+        marker_bd3b0510b32753736d4d694068f210a1.bindPopup(popup_804e65e2a9ea683b23637916a68c3a3c)
+        ;
+
+        
+    
+    
+            marker_bd3b0510b32753736d4d694068f210a1.bindTooltip(
+                `<div>
+                     Entente Yutz HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd3b0510b32753736d4d694068f210a1.setIcon(icon_7a86cad0620f822ff30c9be3bc72276e);
+            
+    
+            var marker_c8b767d274c3305ec30a436586fe1fe7 = L.marker(
+                [47.194, 6.16],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_50238cf6d356a0f4cc796e3b831692e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ae9c9964740402ab5511daee0eca37c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_777b4ac93ba78707a1e442020de44da0 = $(`<div id="html_777b4ac93ba78707a1e442020de44da0" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Entente Saone Mamirolle</b><br>     Poule 11 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 1 | Perdus: 1<br>     Diff Buts: 64     </div>     </div>`)[0];
+                popup_4ae9c9964740402ab5511daee0eca37c.setContent(html_777b4ac93ba78707a1e442020de44da0);
+            
+        
+
+        marker_c8b767d274c3305ec30a436586fe1fe7.bindPopup(popup_4ae9c9964740402ab5511daee0eca37c)
+        ;
+
+        
+    
+    
+            marker_c8b767d274c3305ec30a436586fe1fe7.bindTooltip(
+                `<div>
+                     Entente Saone Mamirolle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8b767d274c3305ec30a436586fe1fe7.setIcon(icon_50238cf6d356a0f4cc796e3b831692e8);
+            
+    
+            var marker_c1ea3ca90fd28286eda043e1033ff47a = L.marker(
+                [48.577, 7.63],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_7cc2edf8950d8131706b160b350caa43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2502e09aa5f06f6767e1b12f4d482c53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_355e2b3378ae5a542f3deeb792ace019 = $(`<div id="html_355e2b3378ae5a542f3deeb792ace019" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Strasbourg Achenheim</b><br>     Poule 11 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 71     </div>     </div>`)[0];
+                popup_2502e09aa5f06f6767e1b12f4d482c53.setContent(html_355e2b3378ae5a542f3deeb792ace019);
+            
+        
+
+        marker_c1ea3ca90fd28286eda043e1033ff47a.bindPopup(popup_2502e09aa5f06f6767e1b12f4d482c53)
+        ;
+
+        
+    
+    
+            marker_c1ea3ca90fd28286eda043e1033ff47a.bindTooltip(
+                `<div>
+                     Strasbourg Achenheim
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1ea3ca90fd28286eda043e1033ff47a.setIcon(icon_7cc2edf8950d8131706b160b350caa43);
+            
+    
+            var marker_a4cda7fd0c154dcafa79ba4b87129bd6 = L.marker(
+                [47.237, 6.024],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_2fc33949342078f161613b0760871452 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22515a8a9762436be1a2cdfae5208ed2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1d301a9cdddb7ba830c86206f33eeef = $(`<div id="html_e1d301a9cdddb7ba830c86206f33eeef" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Palente Besancon HB</b><br>     Poule 12 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 10 | Nuls: 0 | Perdus: 0<br>     Diff Buts: 124     </div>     </div>`)[0];
+                popup_22515a8a9762436be1a2cdfae5208ed2.setContent(html_e1d301a9cdddb7ba830c86206f33eeef);
+            
+        
+
+        marker_a4cda7fd0c154dcafa79ba4b87129bd6.bindPopup(popup_22515a8a9762436be1a2cdfae5208ed2)
+        ;
+
+        
+    
+    
+            marker_a4cda7fd0c154dcafa79ba4b87129bd6.bindTooltip(
+                `<div>
+                     Palente Besancon HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4cda7fd0c154dcafa79ba4b87129bd6.setIcon(icon_2fc33949342078f161613b0760871452);
+            
+    
+            var marker_d9fa151f7b23a26a4d6d3df797e06fc1 = L.marker(
+                [47.322, 5.041],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_e4dd0b96768cce4687ae9ebfd3878ade = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f55738b542fc87d23935407cec5f21d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8eabc9e520097b1304d85ca009778ee1 = $(`<div id="html_8eabc9e520097b1304d85ca009778ee1" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>JDA Dijon HB</b><br>     Poule 12 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 0 | Perdus: 2<br>     Diff Buts: 93     </div>     </div>`)[0];
+                popup_3f55738b542fc87d23935407cec5f21d.setContent(html_8eabc9e520097b1304d85ca009778ee1);
+            
+        
+
+        marker_d9fa151f7b23a26a4d6d3df797e06fc1.bindPopup(popup_3f55738b542fc87d23935407cec5f21d)
+        ;
+
+        
+    
+    
+            marker_d9fa151f7b23a26a4d6d3df797e06fc1.bindTooltip(
+                `<div>
+                     JDA Dijon HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9fa151f7b23a26a4d6d3df797e06fc1.setIcon(icon_e4dd0b96768cce4687ae9ebfd3878ade);
+            
+    
+            var marker_a357f95a3f337961ef394512e7e6a65b = L.marker(
+                [45.764, 4.835],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_15c6e4163525847b73242dfcadf17963 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_429b5e4a2e458191f2fa80ab0ca826a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_572a6fc08d0e9904c885a93ae6279924 = $(`<div id="html_572a6fc08d0e9904c885a93ae6279924" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Lyon Metropole HB</b><br>     Poule 13 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 0 | Perdus: 2<br>     Diff Buts: 85     </div>     </div>`)[0];
+                popup_429b5e4a2e458191f2fa80ab0ca826a9.setContent(html_572a6fc08d0e9904c885a93ae6279924);
+            
+        
+
+        marker_a357f95a3f337961ef394512e7e6a65b.bindPopup(popup_429b5e4a2e458191f2fa80ab0ca826a9)
+        ;
+
+        
+    
+    
+            marker_a357f95a3f337961ef394512e7e6a65b.bindTooltip(
+                `<div>
+                     Lyon Metropole HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a357f95a3f337961ef394512e7e6a65b.setIcon(icon_15c6e4163525847b73242dfcadf17963);
+            
+    
+            var marker_d427dabb4815bf791524b72ae55ea91f = L.marker(
+                [47.288, 5.064],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_380bcc17e20b01958df5069e2772f411 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b461152292949cb94cab5a87f4fdc4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a88e85f8bc7d1b7cd2a21ea3743ac51c = $(`<div id="html_a88e85f8bc7d1b7cd2a21ea3743ac51c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>ALC Longvic / Chevigny</b><br>     Poule 13 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 0 | Perdus: 2<br>     Diff Buts: 32     </div>     </div>`)[0];
+                popup_3b461152292949cb94cab5a87f4fdc4e.setContent(html_a88e85f8bc7d1b7cd2a21ea3743ac51c);
+            
+        
+
+        marker_d427dabb4815bf791524b72ae55ea91f.bindPopup(popup_3b461152292949cb94cab5a87f4fdc4e)
+        ;
+
+        
+    
+    
+            marker_d427dabb4815bf791524b72ae55ea91f.bindTooltip(
+                `<div>
+                     ALC Longvic / Chevigny
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d427dabb4815bf791524b72ae55ea91f.setIcon(icon_380bcc17e20b01958df5069e2772f411);
+            
+    
+            var marker_f773824e7e6419b32f30476bf86ce1a4 = L.marker(
+                [43.674, 4.135],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_2861684294538ed54af2be31d39252d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b6e98b225499589ee09d6274aa94b18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48952152885021d3c0c1e0883055951e = $(`<div id="html_48952152885021d3c0c1e0883055951e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Academie HB Pour Elles</b><br>     Poule 14 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 1 | Perdus: 1<br>     Diff Buts: 67     </div>     </div>`)[0];
+                popup_6b6e98b225499589ee09d6274aa94b18.setContent(html_48952152885021d3c0c1e0883055951e);
+            
+        
+
+        marker_f773824e7e6419b32f30476bf86ce1a4.bindPopup(popup_6b6e98b225499589ee09d6274aa94b18)
+        ;
+
+        
+    
+    
+            marker_f773824e7e6419b32f30476bf86ce1a4.bindTooltip(
+                `<div>
+                     Academie HB Pour Elles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f773824e7e6419b32f30476bf86ce1a4.setIcon(icon_2861684294538ed54af2be31d39252d5);
+            
+    
+            var marker_2dafbc01d48f253fa03c6d764d4ba0c8 = L.marker(
+                [43.8, 4.426],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_ab8d631267c59111e67836e908fe2cd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18bd1476465b1195599d9cea74be7f4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdce2e5b11e3e9f9f05dd5fe4f763371 = $(`<div id="html_fdce2e5b11e3e9f9f05dd5fe4f763371" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Bouillargues HB Nimes</b><br>     Poule 14 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 1 | Perdus: 2<br>     Diff Buts: 40     </div>     </div>`)[0];
+                popup_18bd1476465b1195599d9cea74be7f4a.setContent(html_fdce2e5b11e3e9f9f05dd5fe4f763371);
+            
+        
+
+        marker_2dafbc01d48f253fa03c6d764d4ba0c8.bindPopup(popup_18bd1476465b1195599d9cea74be7f4a)
+        ;
+
+        
+    
+    
+            marker_2dafbc01d48f253fa03c6d764d4ba0c8.bindTooltip(
+                `<div>
+                     Bouillargues HB Nimes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2dafbc01d48f253fa03c6d764d4ba0c8.setIcon(icon_ab8d631267c59111e67836e908fe2cd8);
+            
+    
+            var marker_ca27cc970b8adce1c0e28f51368d70fd = L.marker(
+                [43.628, 3.432],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_f23d651b566db44605f3eb4f18d48c43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce31caf406c2ec23bef0a5c2b2f66aca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_025717466829fe36ba1e58ed4b6f6c6a = $(`<div id="html_025717466829fe36ba1e58ed4b6f6c6a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HBC Clermont Salagou</b><br>     Poule 14 - Meilleur 3ème<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 2 | Perdus: 2<br>     Diff Buts: 21     </div>     </div>`)[0];
+                popup_ce31caf406c2ec23bef0a5c2b2f66aca.setContent(html_025717466829fe36ba1e58ed4b6f6c6a);
+            
+        
+
+        marker_ca27cc970b8adce1c0e28f51368d70fd.bindPopup(popup_ce31caf406c2ec23bef0a5c2b2f66aca)
+        ;
+
+        
+    
+    
+            marker_ca27cc970b8adce1c0e28f51368d70fd.bindTooltip(
+                `<div>
+                     HBC Clermont Salagou
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca27cc970b8adce1c0e28f51368d70fd.setIcon(icon_f23d651b566db44605f3eb4f18d48c43);
+            
+    
+            var marker_3d3b5b1ab2cd433f66b99ac580334886 = L.marker(
+                [43.348, 5.461],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_da854e23954d80fc13a4af866879da67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab2a827a1f695182a7cb43ba68a671f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_817d6133918309ffd0b3d904c31fb950 = $(`<div id="html_817d6133918309ffd0b3d904c31fb950" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Handball Plan de Cuques</b><br>     Poule 15 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 8 | Nuls: 1 | Perdus: 1<br>     Diff Buts: 125     </div>     </div>`)[0];
+                popup_ab2a827a1f695182a7cb43ba68a671f1.setContent(html_817d6133918309ffd0b3d904c31fb950);
+            
+        
+
+        marker_3d3b5b1ab2cd433f66b99ac580334886.bindPopup(popup_ab2a827a1f695182a7cb43ba68a671f1)
+        ;
+
+        
+    
+    
+            marker_3d3b5b1ab2cd433f66b99ac580334886.bindTooltip(
+                `<div>
+                     Handball Plan de Cuques
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d3b5b1ab2cd433f66b99ac580334886.setIcon(icon_da854e23954d80fc13a4af866879da67);
+            
+    
+            var marker_7d20285108f510c0336b295cd8917baa = L.marker(
+                [43.61, 3.876],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_6aaf04644d9604ffa85886484b94125d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e49f9c9f753b70eca7733ea7fc5af8a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84b24979129a621150953b31efe859e2 = $(`<div id="html_84b24979129a621150953b31efe859e2" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>HB Feminin Montpellier</b><br>     Poule 15 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 2 | Perdus: 2<br>     Diff Buts: 56     </div>     </div>`)[0];
+                popup_e49f9c9f753b70eca7733ea7fc5af8a7.setContent(html_84b24979129a621150953b31efe859e2);
+            
+        
+
+        marker_7d20285108f510c0336b295cd8917baa.bindPopup(popup_e49f9c9f753b70eca7733ea7fc5af8a7)
+        ;
+
+        
+    
+    
+            marker_7d20285108f510c0336b295cd8917baa.bindTooltip(
+                `<div>
+                     HB Feminin Montpellier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d20285108f510c0336b295cd8917baa.setIcon(icon_6aaf04644d9604ffa85886484b94125d);
+            
+    
+            var marker_cbebe1cf05a27aefdaff4f5dea60aa41 = L.marker(
+                [43.836, 4.36],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_9d7bbfebdd727be46a971b699c164153 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e766d67bc7b4b8ed3e59b96f7cdeee6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e2a316c5fc1689527c944ea3440c535 = $(`<div id="html_9e2a316c5fc1689527c944ea3440c535" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>USAM Nimes Gard</b><br>     Poule 16 - 1er Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 7 | Nuls: 0 | Perdus: 3<br>     Diff Buts: 36     </div>     </div>`)[0];
+                popup_4e766d67bc7b4b8ed3e59b96f7cdeee6.setContent(html_9e2a316c5fc1689527c944ea3440c535);
+            
+        
+
+        marker_cbebe1cf05a27aefdaff4f5dea60aa41.bindPopup(popup_4e766d67bc7b4b8ed3e59b96f7cdeee6)
+        ;
+
+        
+    
+    
+            marker_cbebe1cf05a27aefdaff4f5dea60aa41.bindTooltip(
+                `<div>
+                     USAM Nimes Gard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbebe1cf05a27aefdaff4f5dea60aa41.setIcon(icon_9d7bbfebdd727be46a971b699c164153);
+            
+    
+            var marker_96f37ceb031c45d94280e922be79e637 = L.marker(
+                [43.66, 6.926],
+                {
+}
+            ).addTo(map_6c20d1b94b97afea6fa5ea1c745cd162);
+        
+    
+            var icon_b8b158d9d01cbc55a12e947bf52588e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c40b937ad9b01774e36738c8643a139 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0306e5666e50bb6aaaf7620cf3e48df3 = $(`<div id="html_0306e5666e50bb6aaaf7620cf3e48df3" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial; font-size:12px;'>     <b>Pays de Grasse HB</b><br>     Poule 16 - 2ème Poule<br>     <hr style='margin:5px 0;'>     Gagnés: 6 | Nuls: 1 | Perdus: 3<br>     Diff Buts: 9     </div>     </div>`)[0];
+                popup_9c40b937ad9b01774e36738c8643a139.setContent(html_0306e5666e50bb6aaaf7620cf3e48df3);
+            
+        
+
+        marker_96f37ceb031c45d94280e922be79e637.bindPopup(popup_9c40b937ad9b01774e36738c8643a139)
+        ;
+
+        
+    
+    
+            marker_96f37ceb031c45d94280e922be79e637.bindTooltip(
+                `<div>
+                     Pays de Grasse HB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96f37ceb031c45d94280e922be79e637.setIcon(icon_b8b158d9d01cbc55a12e947bf52588e5);
+            
+</script>
+</html>
